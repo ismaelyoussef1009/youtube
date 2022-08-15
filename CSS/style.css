@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    background: #f0f0f0;
+    font-family: 'roboto', sans-serif;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.2.5vw;
+}
+
+
+.toggle-btn{
+    width: 9px;
+    height: 13px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.toggle-btn span{
+    position: absolute;
+    width: 90%;
+    height:2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 90%;
+}
+
+.logo{
+    height: 20px;
+    margin: -8px 45px -4px;
+}
+
+.search-box{
+    position: relative;
+    max-width: 630px;
+    width: 70%;
+    height: 41px;
+    display: flex;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 2px;
+}
+
+.search-btn{
+    width: 10%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+    border-radius: 2px;
+}
+
+.search-btn i{
+    font-size: 24px;
+}
+
+.user-options{
+    height: 45px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.user-options i{
+    height: 90%;
+    margin: -9px 70px -29px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+
+.user-dp{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
