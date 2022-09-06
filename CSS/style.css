@@ -88,6 +88,10 @@ body{
     border-radius: 2px;
 }
 
+.search-btn:hover{
+    background: #979797;
+}
+
 .search-btn i{
     font-size: 24px;
 }
@@ -101,7 +105,7 @@ body{
 
 .user-options i{
     height: 90%;
-    margin: -9px 70px -29px;
+    margin: -9px 80px -29px;
     cursor: pointer;
     font-size: 21px;
 }
@@ -122,7 +126,109 @@ body{
 }
 
 
+/*side-bar*/
 
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 205px;
+    height: calc(100vh - 60px);
+    background: #00000000;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: auto;
+}
+.side-bar h3{
+    color: aqua;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.side-bar h6{
+    text-align: center;
+    color: #979797;
+    padding-bottom: 10px;
+}
+
+.side-bar p{
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.links i{
+    height: 25px;
+    margin-right: 30px;
+}
+
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.seperator{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+
+/*filters*/
+
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #dbdbdb; 
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+
+@media (min-width : 375px) {
+    
+}
 
 
 
