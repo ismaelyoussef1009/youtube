@@ -5,102 +5,767 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/556457e973.js" crossorigin="anonymous"></script>
-    <title>Youtube</title>
+    <title>YOUTUBE</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="JAVASCRIPTE/app.js">
 </head>
 <body>
-    <header><!--header-->
-        <!--creation of nav-bar elements-->
-        <nav class="navbar">
-            <!--toggle section still in progress-->
-            <div class="toggle-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div><!--end of toggle-->
-
-            <img src="/IMAGES/logo.png" class="logo" alt=""><!--youtube-logo-->
-
-            <!--youtube search-box and icons -->
-            <div class="search-box">
-                <input type="text" class="search-bar" placeholder="search">
-                <button class="search-btn"><i class="fa-brands fa-searchengin"></i></button>
-            </div>
-            <div class="user-options"><!--icons-->
-                <i class="fa-solid fa-microphone"></i>
-                <i class="fa-solid fa-video"></i>
-                <i class="fa-regular fa-bell"></i>
-                <div class="user-dp"><!--profile pic-->
-                    <img src="/IMAGES/dp.png" alt="">
+    <header><!--ismael header-->
+        <nav class="navigation">
+            <div class="nav_bar"><!--nav bar by ismael-->
+                <div class="nav_bar_button">
+                    <button id="tooglebar"><i class="fa-solid fa-bars"></i></button>
                 </div>
-            </div><!--end of icons-->
+                <div class="nav_bar_image">
+                    <img src="./IMAGES/logo.png" alt="">
+                </div> <!--end of nav bar by ismael-->
+            </div>
+
+            <div class="search_bar"><!--search bar by ismael-->
+                <div class="search_bar_input">
+                    <input type="text" class="search" placeholder="Search">
+                    <button class="search_btn"><i class="fa-brands fa-searchengin"></i></button>
+                    <div class="search_bar_microphone">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div><!--end of search bar by ismael-->
+
+            <div class="notification_bar"><!--notification_bar by ismael-->
+                    <i class=" video fa-solid fa-video"></i>
+                    <i class=" bell fa-regular fa-bell"></i>
+                    <div class="image">
+                    <img src="/IMAGES/dp.png" alt="">
+                    </div>
+            </div><!--end of notification_bar by ismael-->
         </nav>
+    </header>
+    <!--end of ismael header-->
 
-
-        <!--sidebabr-->
-
-        <div class="side-bar">
-            <a href="#" class="links active"><i class="fa-solid fa-house"></i>Home</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Explore</a>
-            <a href="#" class="links"><i class="fa-solid fa-house"></i>Shorts</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Subscription</a>
-            <hr class="seperator">
-
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Library</a>
-            <a href="#" class="links"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Your videos</a>
-            <a href="#" class="links"><i class="fa-solid fa-clock"></i>Watch leater</a>
-            <a href="#" class="links"><i class="fa-solid fa-thumbs-up"></i>Like video</a>
-            <a href="#" class="links"><i class="fa-solid fa-angles-down"></i>Show more</a>
-            <hr class="seperator">
-
-            <h3>EXPLORE</h3>
-            <a href="#" class="links"><i class="fa-solid fa-gamepad"></i>Game</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Life</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Fashion & Beauty</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Learning</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Sports</a>
-            <hr class="seperator">
-
-            <h3>MORE FROM YOUTUBE</h3>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Creator Studio</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>YouTube Music</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>YouTube Kid</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>YouTube TV</a>
-            <hr class="seperator">
-
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Settings</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Report history</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Help</a>
-            <a href="#" class="links"><i class="fa-solid fa-video"></i>Send feedback</a>
-            <hr class="seperator">
-
-            <p>About Press Copyright Coutact Us Creators Advertise Developers</p><br>
-            <p>Terms Privacy Policy & Safty How YouTube Works Test new features</p><br>
-            <h6>© 2022 Google LLC</h6>
+    <section>
+        <div id="defaultDisplay" class="library"><!--library by ismael-->
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                             <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                             <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            E<span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="library_list">
+                <ul class="section1_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <!--end of library by ismael-->
 
-        <!--filters-->
-        <div class="filters">
-            <button class="filter-options active">All</button>
-            <button class="filter-options">Python</button>
-            <button class="filter-options">Web development</button>
-            <button class="filter-options">Javascripte</button>
-            <button class="filter-options">CSS</button>
-            <button class="filter-options">Net Working</button>
-            <button class="filter-options">Artificial Intelligence</button>
-            <button class="filter-options">Music</button>
-            <button class="filter-options">Idots At Work</button>
-            <button class="filter-options">C++</button>
-            <button class="filter-options">Work out</button>
-            <button class="filter-options">Allha</button>
-            <button class="filter-options">Java</button>
+        <div id="secondDisplay" class="explore"><!--explore section by ismael-->
+            <ul class="section1_list">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i> <br>
+                         <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-compass"></i> <br>
+                         <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-face-smile"></i> <br>
+                         <span>Shorts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-laptop-medical"></i> <br>
+                           <span>Subscriptions</span> 
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header><!--end of header-->
+        <hr style="border:1px solid aliceblue;">
+        <!--end of explore section by ismael-->
 
-    <section></section>
 
-    <footer></footer>
+        <div class="videos"><!--youtube videos-->
+            <!--filters-->
+            <div class="filters">
+                <button class="filter-options active">All</button>
+                <button class="filter-options">Python</button>
+                <button class="filter-options">Web development</button>
+                <button class="filter-options">Javascript</button>
+                <button class="filter-options">CSS</button>
+                <button class="filter-options">Net Working</button>
+                <button class="filter-options">Artificial Intelligence</button>
+                <button class="filter-options">Music</button>
+                <button class="filter-options">Idots At Work</button>
+                <button class="filter-options">C++</button>
+                <button class="filter-options">Work out</button>
+                <button class="filter-options">Allha</button>
+                <button class="filter-options">Java</button>
+            </div>
+
+            <div class="video-container">
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                        <img  src="images/world.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                        <div class="author">
+                            <a href="#">
+                               <img src="images/tonnerre.jpg" alt="" >
+                            </a>
+                        </div> 
+                        <div class="title">
+                            <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                            <a href="#" class="name">lama faché</a>
+                            <span><a href="#">3M vues . 4semaines</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <!--fin des details de la video--> 
+                    </div>
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                        <img  src="images/le parlement du rire.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                        <div class="author">
+                            <a href="#">
+                               <img src="images/canal+.png" alt="profil" >
+                            </a>
+                        </div> 
+                        <div class="title">
+                            <h3><a href="#" class="title">le parlement du rire saison 2</a></h3> 
+                            <a href="#" class="name">canal +</a>
+                            <span><a href="#">350k vues . 2semaines</span></a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                        <img  src="images/découverte.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                        <div class="author">
+                           <a href="#">
+                               <img src="images/mountain.jpg" alt="" >
+                           </a>
+                        </div> 
+                        <div class="title">
+                           <h3><a href="#" class="title">excursion en montagne</a></h3>
+                           <a href="#" class="name">merveille tv</a>
+                           <span><a href="#">200k vues . 3mois</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <!--fin des details de la video-->
+                    </div>
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                        <img  src="images/css.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                        <div class="author">
+                            <a href="#">
+                               <img src="images/manga5.jpg" alt="" >
+                            </a>
+                        </div> 
+                        <div class="title">
+                            <h3><a href="#" class="title">magic navigation menu indicator using html & css</a></h3>
+                            <a href="#" class="name">online tutorials</a>
+                            <span><a href="#">1.2M vues . 9mois</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                        <img  src="images/manga11.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                        <div class="author">
+                            <a href="#">
+                                <img src="images/manga6.jpg" alt="" >
+                            </a>
+                        </div> 
+                        <div class="title">
+                            <h3><a href="#" class="title">one piece </a></h3>
+                            <a href="#" class="name">grave uzumaki</a>
+                            <span><a href="#">6M vues . 5moins</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                    <div class="videos-image"><!--patie centrale de la video-->
+                         <img  src="images/tayc.jpg" alt="images" >
+                    </div><!--fin de la patie centrale de la video-->
+    
+                    <div class="video-detail"><!--details de la video-->
+                         <div class="author">
+                            <a href="#">
+                                <img src="images/tayc2.jpg" alt="" >
+                            </a>
+                         </div> 
+                         <div class="title">
+                             <h3><a href="#" class="title">Tayc-le temps(clips officiel)</a></h3> 
+                             <a href="#" class="name">tayc</a>
+                             <span><a href="#">2M vues . 2jours</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                     <div class="videos-image"><!--patie centrale de la video-->
+                          <img  src="images/manga13.jpg" alt="images" >
+                     </div><!--fin de la patie centrale de la video-->
+    
+                     <div class="video-detail"><!--details de la video-->
+                         <div class="author">
+                             <a href="#">
+                                <img src="images/kids.jpg" alt="" >
+                             </a>
+                         </div> 
+                         <div class="title">
+                             <h3><a href="#" class="title">billboard hot 100 this week</a></h3> 
+                             <a href="#" class="name">shooting star lyrics</a>
+                             <span><a href="#">100k vues . 1mois</a></span>
+                         </div>
+                         <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                     </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->
+    
+                <!-- debut d'une video -->
+                <div class="video">
+                      <div class="videos-image"><!--patie centrale de la video-->
+                            <img  src="images/musique.png" alt="images" >
+                      </div><!--fin de la patie centrale de la video-->
+    
+                      <div class="video-detail"><!--details de la video-->
+                          <div class="author">
+                               <a href="#">
+                                   <img src="images/manga1.jpg" alt="" >
+                              </a>
+                          </div> 
+                          <div class="title">
+                              <h3><a href="#" class="title">scandal a holiwood</a></h3>
+                              <a href="#" class="name">top us song</a>
+                              <span><a href="#">350k vues . 2semaines</a></span>
+                          </div>
+                          <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div><!--fin des details de la video-->
+                </div>
+                <!-- fin d'une video -->   
+            </div>
+            <hr>
+        <!--fin youtube videos-->
+    
+        <!--debut stories-->
+        <div class="storie-container">
+                <div class="storie">
+                    <div class="storie-image">
+                        <a href="#"></a>
+                            <img src="images/construction.jpg" alt="image">
+                        </a> 
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                            <a href="#"><h3>conception d'une voiture de course</h3></a>
+                            <a href="#"><span>800k vues</span></a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <img src="images/star.jpg" alt="image">
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                           <a href=""><h3>concert de kenney</h3></a>
+                           <a href=""><span>4.3M vues</span></a>
+                       </div>
+                       <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <img src="images/travail.jpg" alt="image">
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                           <a href="#"><h3>télephone du futur</h3></a>
+                           <a href="#">1.3M vues</a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <a href="#">
+                            <img src="images/code.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                           <a href="#"><h3>réaction au question les plus posées en html</h3></a>
+                           <a href="#"><span>360K vues</span></a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <a href="#">
+                            <img src="images/personne.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                            <a href="#"><h3>classification du personnel dans une société</h3></a>
+                            <a href="#"><span>65K vues</span></a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <img src="images/dadju2.jpg" alt="">
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                            <h3><a href="#">concert de dadju</a></h3>
+                            <span><a href="#">1.1 vues</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <img src="images/manga14.jpg" alt="image">
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                            <a href="#"><h3>salon du manga edition 3</h3></a>
+                            <a href="#"><span>4M vues</span></a>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+                <div class="storie">
+                    <div class="storie-image">
+                        <img src="images/tonnerre3.jpg" alt="image">
+                    </div>
+                    <div class="storie-title">
+                        <div class="description">
+                            <h3><a href="#">observation des étoiles au nepal</a></h3>
+                            <span><a href="#">680K vues</a></span>
+                        </div>
+                        <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div> 
+        </div>
+        <!--fin stories-->
+        <hr>
+        <div class="video-container">
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+            <!-- fin d'une video -->
+            <!-- debut d'une video -->
+            <div class="video">
+                <div class="videos-image"><!--patie centrale de la video-->
+                    <img  src="images/world.jpg" alt="images" >
+                </div><!--fin de la patie centrale de la video-->
+    
+                <div class="video-detail"><!--details de la video-->
+                    <div class="author">
+                        <a href="#">
+                           <img src="images/tonnerre.jpg" alt="" >
+                        </a>
+                    </div> 
+                    <div class="title">
+                        <h3><a href="#" class="title">évolution de la technologie dans le monde</a></h3> 
+                        <a href="#" class="name">lama faché</a>
+                        <span><a href="#">3M vues . 4semaines</a></span>
+                    </div>
+                    <button class="dots_download"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <!--fin des details de la video--> 
+                </div>
+            </div>
+        </div>    
+        </div><!-- fin d'une video -->
+    </section>
+    <script src="/js/index.js"></script>
 </body>
 </html>
