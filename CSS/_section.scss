@@ -2,7 +2,9 @@ section{
     display: flex;
     .library{
         overflow-y: scroll;
-        width: 22%;
+        // width: 22%;
+        flex-grow: 1;
+        flex-basis: 22%;
         height: 100vh;
         background: blueviolet;
         position: sticky;
@@ -57,19 +59,60 @@ section{
         }
     }
 
+    .scroll-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .left-button-container {
+            // background-color: red;
+            background: linear-gradient(to right, white 50%,rgba(255,255,255,0) 100%);
+            padding-right: 50px;
+            position: absolute;
+            left: 0;
+        }
+    
+        .right-button-container{
+            // background-color: blue;
+            background: linear-gradient(to left, white 50%,rgba(255,255,255,0) 100%);
+            padding-left: 30px;
+            position: absolute;
+            right: 0;
+            
+        }    
+
+        button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+
     // .ismael{
     //     width: 100%;
     //     background: red;
     
         .videos{//merville this your code
-            width: 100%;
+            width: 85%;
+            flex-grow: 1;
+            flex-basis: 60%;
+
+            .filters::-webkit-scrollbar {
+                display: none;
+            }
+            
             .filters{
+                overflow-y: hidden;
+                overflow-x: scroll;
                 height: 50px;
                 display: flex;
                 background: #fff;
                 border-top: 1px solid #dbdbdb;
                 border-bottom: 1px solid #dbdbdb;
                 align-items: center;
+                white-space: nowrap;
                 .filter-options{
                     border-radius: 50px;
                     border: 1px solid #dbdbdb; 
