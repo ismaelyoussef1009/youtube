@@ -1,124 +1,97 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
   /*end of nav_bar, nav_bar_button & nav_bar_image*/
   /*notification_bar*/
 }
-
 header .navigation {
   width: 100%;
   height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .navigation .nav_bar {
   width: 18.3%;
   height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .navigation .nav_bar .nav_bar_button {
   margin-left: 8px;
   padding-top: 2px;
   cursor: pointer;
 }
-
 header .navigation .nav_bar .nav_bar_button button {
   font-size: 20px;
   padding: 10px;
   background: none;
   border: none;
 }
-
 header .navigation .nav_bar .nav_bar_button button i {
   cursor: pointer;
 }
-
 header .navigation .nav_bar .nav_bar_image {
   margin-left: 18px;
 }
-
 header .navigation .nav_bar .nav_bar_image img {
   width: 70px;
   padding-top: 15px;
   cursor: pointer;
 }
-
 header .search_bar {
   width: 58.3%;
   height: 8vh;
 }
-
 header .search_bar .search_bar_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 98%;
   height: 8vh;
   padding-bottom: 20px;
   /*end of search_bar and search_microphone*/
 }
-
 header .search_bar .search_bar_input .search {
-  width: 62%;
-  height: 5vh;
+  width: 63%;
+  height: 5.4vh;
   font-size: 32px;
   margin-left: 140px;
-  margin-top: 5px;
+  margin-top: 6px;
   padding-bottom: 10px;
   padding-left: 8px;
-  border-radius: 1px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
   border: 1px solid rgba(122, 121, 121, 0.492);
 }
-
-header .search_bar .search_bar_input .search::-webkit-input-placeholder {
+header .search_bar .search_bar_input .search::-moz-placeholder {
   color: rgba(120, 124, 120, 0.932);
   font-size: 13px;
 }
-
 header .search_bar .search_bar_input .search:-ms-input-placeholder {
   color: rgba(120, 124, 120, 0.932);
   font-size: 13px;
 }
-
-header .search_bar .search_bar_input .search::-ms-input-placeholder {
-  color: rgba(120, 124, 120, 0.932);
-  font-size: 13px;
-}
-
 header .search_bar .search_bar_input .search::placeholder {
   color: rgba(120, 124, 120, 0.932);
   font-size: 13px;
 }
-
 header .search_bar .search_bar_input .search_btn {
   width: 8%;
-  height: 5vh;
-  margin-top: 5px;
+  height: 5.4vh;
+  margin-top: 6px;
   background: rgba(135, 133, 133, 0.078);
   border: 1px solid rgba(128, 128, 128, 0.492);
-  border-radius: 2px;
-  /* background: red; */
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
   border-left: none;
   cursor: pointer;
 }
-
 header .search_bar .search_bar_input .search_btn i {
   font-size: 22px;
   border: none;
 }
-
 header .search_bar .search_bar_input .search_bar_microphone {
-  width: 4.2%;
+  width: 4.5%;
   height: 5vh;
   background: rgba(184, 183, 183, 0.134);
   margin-left: 7px;
@@ -126,33 +99,28 @@ header .search_bar .search_bar_input .search_bar_microphone {
   border-radius: 30px;
   cursor: pointer;
 }
-
 header .search_bar .search_bar_input .search_bar_microphone i {
   padding-top: 8px;
   font-size: 15px;
-  padding-left: 8.5px;
+  padding-left: 10px;
   border: 50px;
 }
-
 header .notification_bar {
   width: 24%;
   position: relative;
 }
-
 header .notification_bar .video {
   margin-left: 150px;
   font-size: 16px;
   margin-top: 15px;
   cursor: pointer;
 }
-
 header .notification_bar .bell {
   margin-left: 19px;
   margin-top: 12px;
   font-size: 18px;
   cursor: pointer;
 }
-
 header .notification_bar .image {
   width: 25%;
   margin-left: 210px;
@@ -160,7 +128,6 @@ header .notification_bar .image {
   padding-left: 20px;
   position: absolute;
 }
-
 header .notification_bar .image img {
   width: 32px;
   border-radius: 50%;
@@ -168,18 +135,12 @@ header .notification_bar .image img {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section .library {
   overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
+  flex-grow: 1;
+  flex-basis: 22%;
   height: 100vh;
   background: blueviolet;
   position: -webkit-sticky;
@@ -187,128 +148,91 @@ section .library {
   top: 0px;
   left: 0;
 }
-
 section .library .library_list {
   display: block;
 }
-
 section .library .library_list ul {
   list-style: none;
 }
-
 section .library .library_list ul li {
   width: 100%;
   padding: 6px 0px 6px 20px;
 }
-
 section .library .library_list ul li:hover {
   background-color: rgba(126, 122, 122, 0.121);
 }
-
 section .library .library_list ul li a {
   text-decoration: none;
   color: black;
   font-size: 12px;
 }
-
 section .library .library_list ul li a span {
   margin-left: 25px;
 }
-
 section .explore {
   width: 7%;
   background: red;
   display: none;
 }
-
 section .explore .section1_list {
   list-style: none;
 }
-
 section .explore .section1_list li {
   width: 100%;
   text-decoration: none;
   padding: 6px 0px 6px 20px;
 }
-
 section .explore .section1_list li:hover {
   background-color: rgba(102, 95, 95, 0.268);
 }
-
 section .explore .section1_list li a {
   text-decoration: none;
   color: black;
   font-size: 12px;
 }
-
 section .scroll-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 section .scroll-container .left-button-container {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
   padding-right: 50px;
   position: absolute;
   left: 0;
 }
-
 section .scroll-container .right-button-container {
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
   padding-left: 30px;
   position: absolute;
   right: 0;
 }
-
 section .scroll-container button {
   border: none;
   background: transparent;
   cursor: pointer;
 }
-
 section .videos {
-  width: 85%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  width: 83%;
+  flex-grow: 1;
+  flex-basis: 60%;
 }
-
 section .videos .filters::-webkit-scrollbar {
   display: none;
 }
-
 section .videos .filters {
   overflow-y: hidden;
   overflow-x: scroll;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: #fff;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   white-space: nowrap;
 }
-
 section .videos .filters .filter-options {
   border-radius: 50px;
   border: 1px solid #dbdbdb;
@@ -318,48 +242,37 @@ section .videos .filters .filter-options {
   cursor: pointer;
   margin: 0 0 0 15px;
 }
-
 section .videos .video-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   width: 100%;
 }
-
 section .videos .video-container .video {
   width: 95%;
   height: 90%;
   margin-right: 2%;
   margin-bottom: 40px;
-  -webkit-column-gap: 3%;
-          column-gap: 3%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
   position: relative;
   cursor: pointer;
 }
-
 section .videos .video-container .video:hover .dots_download {
   display: block;
 }
-
 section .videos .video-container .video .videos-image {
   height: 170px;
 }
-
 section .videos .video-container .video .videos-image img {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
-
 section .videos .video-container .video .video-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 6px;
   position: inherit;
 }
-
 section .videos .video-container .video .video-detail .author img {
   height: 40px;
   width: 40px;
@@ -367,42 +280,31 @@ section .videos .video-container .video .video-detail .author img {
   margin-right: 10px;
   margin-top: 10px;
 }
-
 section .videos .video-container .video .video-detail .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: -4px;
   width: 95%;
 }
-
 section .videos .video-container .video .video-detail .title h3 {
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: black;
 }
-
 section .videos .video-container .video .video-detail .title .name {
   margin-top: -8px;
 }
-
 section .videos .video-container .video .video-detail .title a {
   text-decoration: none;
-  color: #606060;
+  color: rgb(96, 96, 96);
   font-size: 14px;
 }
-
 section .videos .video-container .video .video-detail .title span {
   text-decoration: none;
-  color: #606060;
+  color: rgb(96, 96, 96);
   font-size: 14px;
 }
-
 section .videos .video-container .video .video-detail button {
   border: none;
   background-color: transparent;
@@ -413,82 +315,60 @@ section .videos .video-container .video .video-detail button {
   margin-top: 10px;
   display: none;
 }
-
 section .videos hr {
   border: none;
   border-bottom: 5px solid #ddd;
   margin-bottom: 50px;
 }
-
 section .videos .storie-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-column-gap: 1%;
-          column-gap: 1%;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
 }
-
 section .videos .storie-container .storie {
   width: 12.5%;
   cursor: pointer;
 }
-
 section .videos .storie-container .storie:hover .dots_download {
   display: block;
 }
-
 section .videos .storie-container .storie .storie-image {
   height: 70%;
 }
-
 section .videos .storie-container .storie .storie-image img {
   width: 100%;
   height: 100%;
 }
-
 section .videos .storie-container .storie .storie-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: inherit;
   margin-top: -2px;
 }
-
 section .videos .storie-container .storie .storie-title .description {
   width: 88%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 section .videos .storie-container .storie .storie-title .description h3 {
-  font-family: 'roboto', arial,sans-serif;
+  font-family: "roboto", arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: black;
 }
-
 section .videos .storie-container .storie .storie-title .description a {
   text-decoration: none;
   font-size: 14px;
-  color: #606060;
+  color: rgb(96, 96, 96);
 }
-
 section .videos .storie-container .storie .storie-title .description span {
   text-decoration: none;
   font-size: 14px;
-  color: #606060;
+  color: rgb(96, 96, 96);
 }
-
 section .videos .storie-container .storie .storie-title .description .span {
   margin-top: -10px;
 }
-
 section .videos .storie-container .storie .storie-title button {
   display: none;
   border: none;
@@ -500,147 +380,6 @@ section .videos .storie-container .storie .storie-title button {
   margin-left: 10%;
 }
 
-@media (min-width: 1200px) {
-  header {
-    /*end of nav_bar, nav_bar_button & nav_bar_image*/
-    /*notification_bar*/
-  }
-  header .navigation {
-    width: 100%;
-    height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .navigation .nav_bar {
-    width: 18.3%;
-    height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .navigation .nav_bar .nav_bar_button {
-    margin-left: 8px;
-    padding-top: 2px;
-    cursor: pointer;
-  }
-  header .navigation .nav_bar .nav_bar_button button {
-    font-size: 20px;
-    padding: 10px;
-    background: none;
-    border: none;
-  }
-  header .navigation .nav_bar .nav_bar_button button i {
-    cursor: pointer;
-  }
-  header .navigation .nav_bar .nav_bar_image {
-    margin-left: 18px;
-  }
-  header .navigation .nav_bar .nav_bar_image img {
-    width: 70px;
-    padding-top: 15px;
-    cursor: pointer;
-  }
-  header .search_bar {
-    width: 58.3%;
-    height: 8vh;
-  }
-  header .search_bar .search_bar_input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 98%;
-    height: 8vh;
-    padding-bottom: 20px;
-    /*end of search_bar and search_microphone*/
-  }
-  header .search_bar .search_bar_input .search {
-    width: 62%;
-    height: 5vh;
-    font-size: 32px;
-    margin-left: 140px;
-    margin-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 8px;
-    border-radius: 1px;
-    border: 1px solid rgba(122, 121, 121, 0.492);
-  }
-  header .search_bar .search_bar_input .search::-webkit-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search:-ms-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search::-ms-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search::placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search_btn {
-    width: 8%;
-    height: 5vh;
-    margin-top: 5px;
-    background: rgba(135, 133, 133, 0.078);
-    border: 1px solid rgba(128, 128, 128, 0.492);
-    border-radius: 2px;
-    /* background: red; */
-    border-left: none;
-    cursor: pointer;
-  }
-  header .search_bar .search_bar_input .search_btn i {
-    font-size: 22px;
-    border: none;
-  }
-  header .search_bar .search_bar_input .search_bar_microphone {
-    width: 4.2%;
-    height: 5vh;
-    background: rgba(184, 183, 183, 0.134);
-    margin-left: 7px;
-    margin-top: 6px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  header .search_bar .search_bar_input .search_bar_microphone i {
-    padding-top: 8px;
-    font-size: 15px;
-    padding-left: 8.5px;
-    border: 50px;
-  }
-  header .notification_bar {
-    width: 24%;
-    position: relative;
-  }
-  header .notification_bar .video {
-    margin-left: 150px;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  header .notification_bar .bell {
-    margin-left: 19px;
-    margin-top: 12px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  header .notification_bar .image {
-    width: 25%;
-    margin-left: 210px;
-    margin-top: -27px;
-    padding-left: 20px;
-    position: absolute;
-  }
-  header .notification_bar .image img {
-    width: 32px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-}
-
 @media (max-width: 992px) {
   header {
     /*end of nav_bar, nav_bar_button & nav_bar_image*/
@@ -649,15 +388,11 @@ section .videos .storie-container .storie .storie-title button {
   header .navigation {
     width: 100%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .navigation .nav_bar {
     width: 18.3%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .navigation .nav_bar .nav_bar_button {
@@ -687,8 +422,6 @@ section .videos .storie-container .storie .storie-title button {
     height: 8vh;
   }
   header .search_bar .search_bar_input {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 98%;
     height: 8vh;
@@ -706,15 +439,11 @@ section .videos .storie-container .storie .storie-title button {
     border-radius: 1px;
     border: 1px solid rgba(122, 121, 121, 0.492);
   }
-  header .search_bar .search_bar_input .search::-webkit-input-placeholder {
+  header .search_bar .search_bar_input .search::-moz-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 13px;
   }
   header .search_bar .search_bar_input .search:-ms-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search::-ms-input-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 13px;
   }
@@ -781,7 +510,6 @@ section .videos .storie-container .storie .storie-title button {
     cursor: pointer;
   }
 }
-
 @media (max-width: 768px) {
   header {
     background: black;
@@ -790,8 +518,6 @@ section .videos .storie-container .storie .storie-title button {
     width: 100%;
     height: 8vh;
     background: rgba(255, 0, 0, 0.199);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     /*end of nav_bar, nav_bar_button & nav_bar_image*/
@@ -801,8 +527,6 @@ section .videos .storie-container .storie .storie-title button {
   header .navigation .nav_bar {
     width: 30%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .navigation .nav_bar .nav_bar_button {
@@ -827,8 +551,6 @@ section .videos .storie-container .storie .storie-title button {
     height: 8vh;
   }
   header .navigation .search_bar .search_bar_input {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 93%;
     padding-bottom: 20px;
@@ -843,15 +565,11 @@ section .videos .storie-container .storie .storie-title button {
     padding-left: 8px;
     border: 1px solid rgba(122, 121, 121, 0.492);
   }
-  header .navigation .search_bar .search_bar_input .search::-webkit-input-placeholder {
+  header .navigation .search_bar .search_bar_input .search::-moz-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 17px;
   }
   header .navigation .search_bar .search_bar_input .search:-ms-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 17px;
-  }
-  header .navigation .search_bar .search_bar_input .search::-ms-input-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 17px;
   }
@@ -890,10 +608,8 @@ section .videos .storie-container .storie .storie-title button {
     background: yellow;
     position: relative;
     margin-left: 180px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
   }
   header .navigation .notification_bar .video {
     margin-top: 17.4px;
@@ -917,7 +633,6 @@ section .videos .storie-container .storie .storie-title button {
     margin-top: 12px;
   }
 }
-
 @media (max-width: 576px) {
   header {
     /*end of nav_bar, nav_bar_button & nav_bar_image*/
@@ -926,15 +641,11 @@ section .videos .storie-container .storie .storie-title button {
   header .navigation {
     width: 100%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .navigation .nav_bar {
     width: 18.3%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .navigation .nav_bar .nav_bar_button {
@@ -964,8 +675,6 @@ section .videos .storie-container .storie .storie-title button {
     height: 8vh;
   }
   header .search_bar .search_bar_input {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 98%;
     height: 8vh;
@@ -983,15 +692,11 @@ section .videos .storie-container .storie .storie-title button {
     border-radius: 1px;
     border: 1px solid rgba(122, 121, 121, 0.492);
   }
-  header .search_bar .search_bar_input .search::-webkit-input-placeholder {
+  header .search_bar .search_bar_input .search::-moz-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 13px;
   }
   header .search_bar .search_bar_input .search:-ms-input-placeholder {
-    color: rgba(120, 124, 120, 0.932);
-    font-size: 13px;
-  }
-  header .search_bar .search_bar_input .search::-ms-input-placeholder {
     color: rgba(120, 124, 120, 0.932);
     font-size: 13px;
   }
@@ -1058,11 +763,8 @@ section .videos .storie-container .storie .storie-title button {
     cursor: pointer;
   }
 }
-
 @media (max-width: 576px) {
   section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   section .library {
@@ -1117,15 +819,11 @@ section .videos .storie-container .storie .storie-title button {
   }
   section .videos .filters {
     height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: #fff;
     border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   section .videos .filters .filter-options {
     border-radius: 50px;
@@ -1142,8 +840,8 @@ section .videos .storie-container .storie .storie-title button {
   section .videos .video-container .video {
     width: 95%;
     margin-right: 2%;
-    -webkit-column-gap: 3%;
-            column-gap: 3%;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
     position: relative;
   }
   section .videos .video-container .video:hover .dots_download {
@@ -1158,8 +856,6 @@ section .videos .storie-container .storie .storie-title button {
     cursor: pointer;
   }
   section .videos .video-container .video .video-detail {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 6px;
     position: inherit;
@@ -1172,18 +868,13 @@ section .videos .storie-container .storie .storie-title button {
     margin-top: 10px;
   }
   section .videos .video-container .video .video-detail .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: -4px;
     width: 95%;
   }
   section .videos .video-container .video .video-detail .title h3 {
-    font-family: 'roboto', Arial, sans-serif;
+    font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #030303;
@@ -1193,12 +884,12 @@ section .videos .storie-container .storie .storie-title button {
   }
   section .videos .video-container .video .video-detail .title a {
     text-decoration: none;
-    color: #606060;
+    color: rgb(96, 96, 96);
     font-size: 14px;
   }
   section .videos .video-container .video .video-detail .title span {
     text-decoration: none;
-    color: #606060;
+    color: rgb(96, 96, 96);
     font-size: 14px;
   }
   section .videos .video-container .video .video-detail button {
@@ -1211,5 +902,4 @@ section .videos .storie-container .storie .storie-title button {
     margin-top: 10px;
     display: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
