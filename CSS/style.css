@@ -24,7 +24,7 @@ header .navigation .nav_bar .nav_bar_button {
   cursor: pointer;
 }
 header .navigation .nav_bar .nav_bar_button button {
-  font-size: 20px;
+  font-size: 19px;
   padding: 10px;
   background: none;
   border: none;
@@ -142,11 +142,12 @@ section .library {
   flex-grow: 1;
   flex-basis: 22%;
   height: 100vh;
-  background: blueviolet;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   left: 0;
+  margin-top: 8px;
+  padding-left: 6px;
 }
 section .library .library_list {
   display: block;
@@ -154,9 +155,17 @@ section .library .library_list {
 section .library .library_list ul {
   list-style: none;
 }
+section .library .library_list ul .man {
+  background-color: rgba(126, 122, 122, 0.121);
+}
+section .library .library_list ul .man:hover {
+  background-color: rgba(182, 177, 177, 0.492);
+}
 section .library .library_list ul li {
-  width: 100%;
-  padding: 6px 0px 6px 20px;
+  width: 95%;
+  height: 5.9vh;
+  padding: 6px 0px 6px 10px;
+  border-radius: 10px;
 }
 section .library .library_list ul li:hover {
   background-color: rgba(126, 122, 122, 0.121);
@@ -165,6 +174,9 @@ section .library .library_list ul li a {
   text-decoration: none;
   color: black;
   font-size: 12px;
+}
+section .library .library_list ul li a i {
+  font-size: 15px;
 }
 section .library .library_list ul li a span {
   margin-left: 25px;
@@ -196,16 +208,21 @@ section .scroll-container {
   justify-content: center;
   align-items: center;
   position: relative;
+  background: black;
 }
 section .scroll-container .left-button-container {
-  background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-color: red;
+  background: linear-gradient(to right, white 100%, rgba(251, 251, 251, 0) 100%);
   padding-right: 50px;
+  padding-bottom: 18px;
   position: absolute;
   left: 0;
 }
 section .scroll-container .right-button-container {
-  background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-color: blue;
+  background: linear-gradient(to left, white 100%, rgba(255, 255, 255, 0) 100%);
   padding-left: 30px;
+  padding-bottom: 18px;
   position: absolute;
   right: 0;
 }
@@ -225,22 +242,31 @@ section .videos .filters::-webkit-scrollbar {
 section .videos .filters {
   overflow-y: hidden;
   overflow-x: scroll;
-  height: 50px;
+  height: 65px;
   display: flex;
   background: #fff;
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
   align-items: center;
   white-space: nowrap;
+  padding-bottom: 16px;
+}
+section .videos .filters #active {
+  background: black;
+  color: white;
 }
 section .videos .filters .filter-options {
   border-radius: 50px;
   border: 1px solid #dbdbdb;
   text-transform: capitalize;
   color: #242424;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
   margin: 0 0 0 15px;
+  padding: 8px;
+  border-radius: 10px;
+  background: rgba(126, 122, 122, 0.121);
+}
+section .videos .filters .filter-options:hover {
+  background-color: rgba(182, 177, 177, 0.492);
 }
 section .videos .video-container {
   display: grid;

@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/556457e973.js" crossorigin="anonymous"></script>
     <title>YOUTUBE</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="/IMAGES/images.png" type="image/x-icon">
 </head>
 <body>
     <header><!--ismael header-->
@@ -45,7 +46,7 @@
         <div id="defaultDisplay" class="library"><!--library by ismael-->
             <div class="library_list">
                 <ul class="section1_list">
-                    <li>
+                    <li class="man">
                         <a href="#">
                             <i class="fa-solid fa-house"></i>
                              <span>Home</span>
@@ -60,13 +61,13 @@
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-face-smile"></i>
-                            <span>Explore</span>
+                            <span>Short</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-laptop-medical"></i>
-                            <span>Explore</span>
+                            <span>Subscriptions</span>
                         </a>
                     </li>
                 </ul>
@@ -77,25 +78,37 @@
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-house"></i>
-                            <span>Explore</span>
+                            <span>Library</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-regular fa-compass"></i>
-                            <span>Explore</span>
+                            <span>History</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-face-smile"></i>
-                            <span>Explore</span>
+                            <span>Your videos</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-laptop-medical"></i>
-                            <span>Explore</span>
+                            <span>Watch later</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Like videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>Show more</span>
                         </a>
                     </li>
                 </ul>
@@ -103,18 +116,6 @@
             <hr>
             <div class="library_list">
                 <ul class="section1_list">
-                    <li>
-                        <a href="#">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Explore</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-regular fa-compass"></i>
-                            <span>Explore</span>
-                        </a>
-                    </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-face-smile"></i>
@@ -291,7 +292,7 @@
                     </button>
                 </div>
                 <div class="filters" id="filters">
-                    <button class="filter-options active">All</button>
+                    <button class="active filter-options" id="active">All</button>
                     <button class="filter-options">Python</button>
                     <button class="filter-options">Web development</button>
                     <button class="filter-options">Javascript</button>
