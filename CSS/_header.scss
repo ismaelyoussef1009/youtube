@@ -3,13 +3,16 @@
             width: 100%;
             height: 8vh;
             display: flex;
-            // background: red;
+            background: red;
+            position: fixed;
+            z-index: 1;
             
             .nav_bar{
                 width: 18.3%;
                 height: 8vh;
                 display: flex;
-                // background: blue;
+                top: 0px;
+                //background: blue;
                 .nav_bar_button{
                     margin-left: 8px;
                     // background: orange;

@@ -2,13 +2,12 @@ section{
     display: flex;
     .library{
         overflow-y: scroll;
-        // width: 22%;
+        width: 17%;
         flex-grow: 1;
-        flex-basis: 22%;
         height: 100vh;
         background: blueviolet;
-        position: sticky;
-        top: 0px;
+        position: fixed;
+        top: 8vh;
         left: 0;
         // display: none;
         .library_list{
@@ -37,8 +36,9 @@ section{
     }
 
     .explore{
-        width: 7%;
-        // position: sticky;
+        width: 10%;
+        height: 100vh;
+        position: fixed;
         background: red;
         display: none;
         .section1_list{
@@ -64,7 +64,11 @@ section{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        position: relative;
+        position: fixed;
+        top: 8vh;
+        width: 83%;
+        left: 17%;
+        z-index: 1;
 
         .left-button-container {
             // background-color: red;
@@ -98,6 +102,9 @@ section{
             width: 83%;
             flex-grow: 1;
             flex-basis: 60%;
+            position: absolute;
+            top: calc(8vh + 65px);
+            left: 17%;
 
             .filters::-webkit-scrollbar {
                 display: none;

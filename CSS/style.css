@@ -12,11 +12,15 @@ header .navigation {
   width: 100%;
   height: 8vh;
   display: flex;
+  background: red;
+  position: fixed;
+  z-index: 1;
 }
 header .navigation .nav_bar {
   width: 18.3%;
   height: 8vh;
   display: flex;
+  top: 0px;
 }
 header .navigation .nav_bar .nav_bar_button {
   margin-left: 8px;
@@ -139,13 +143,12 @@ section {
 }
 section .library {
   overflow-y: scroll;
+  width: 17%;
   flex-grow: 1;
-  flex-basis: 22%;
   height: 100vh;
   background: blueviolet;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  top: 8vh;
   left: 0;
 }
 section .library .library_list {
@@ -170,7 +173,9 @@ section .library .library_list ul li a span {
   margin-left: 25px;
 }
 section .explore {
-  width: 7%;
+  width: 10%;
+  height: 100vh;
+  position: fixed;
   background: red;
   display: none;
 }
@@ -195,7 +200,11 @@ section .scroll-container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 8vh;
+  width: 83%;
+  left: 17%;
+  z-index: 1;
 }
 section .scroll-container .left-button-container {
   background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
@@ -218,6 +227,9 @@ section .videos {
   width: 83%;
   flex-grow: 1;
   flex-basis: 60%;
+  position: absolute;
+  top: calc(8vh + 65px);
+  left: 17%;
 }
 section .videos .filters::-webkit-scrollbar {
   display: none;
