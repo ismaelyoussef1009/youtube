@@ -12,7 +12,6 @@ header .navigation {
   width: 100%;
   height: 8vh;
   display: flex;
-  background: red;
   position: fixed;
   z-index: 1;
 }
@@ -146,7 +145,6 @@ section .library {
   width: 17%;
   flex-grow: 1;
   height: 100vh;
-  background: blueviolet;
   position: fixed;
   top: 8vh;
   left: 0;
@@ -189,8 +187,8 @@ section .explore {
   width: 10%;
   height: 100vh;
   position: fixed;
-  background: red;
   display: none;
+  padding-top: 55px;
 }
 section .explore .section1_list {
   list-style: none;
@@ -283,6 +281,7 @@ section .videos .video-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 100%;
+  background: blue;
 }
 section .videos .video-container .video {
   width: 95%;

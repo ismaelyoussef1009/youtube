@@ -5,7 +5,7 @@ section{
         width: 17%;
         flex-grow: 1;
         height: 100vh;
-        background: blueviolet;
+        // background: blueviolet;
         position: fixed;
         top: 8vh;
         left: 0;
@@ -52,8 +52,9 @@ section{
         width: 10%;
         height: 100vh;
         position: fixed;
-        background: red;
+        // background: red;
         display: none;
+        padding-top: 55px;
         .section1_list{
             list-style: none;
                 li{
@@ -164,6 +165,7 @@ section{
                 display: grid;
                 grid-template-columns: auto auto auto auto;
                 width: 100%;
+                background: blue;
                 .video{
                     width: 95%;
                     height: 90%;
