@@ -5,6 +5,7 @@
 }
 
 header {
+  z-index: 1;
   /*end of nav_bar, nav_bar_button & nav_bar_image*/
   /*notification_bar*/
 }
@@ -22,18 +23,23 @@ header .navigation .nav_bar {
   top: 0px;
 }
 header .navigation .nav_bar .nav_bar_button {
-  margin-left: 8px;
-  padding-top: 2px;
+  width: 15%;
+  height: 5.2vh;
+  margin-left: 10px;
+  background-color: rgba(182, 177, 177, 0.492);
+  border-radius: 50px;
+  margin-top: 7px;
+  position: relative;
   cursor: pointer;
 }
 header .navigation .nav_bar .nav_bar_button button {
-  font-size: 19px;
-  padding: 10px;
+  font-size: 15px;
   background: none;
   border: none;
 }
 header .navigation .nav_bar .nav_bar_button button i {
   cursor: pointer;
+  position: absolute;
 }
 header .navigation .nav_bar .nav_bar_image {
   margin-left: 18px;
@@ -194,9 +200,11 @@ section .explore .section1_list {
   list-style: none;
 }
 section .explore .section1_list li {
-  width: 100%;
+  width: 51%;
+  border-radius: 10px;
   text-decoration: none;
-  padding: 6px 0px 6px 20px;
+  top: 20px;
+  padding: 8px 0px 15px 20px;
 }
 section .explore .section1_list li:hover {
   background-color: rgba(102, 95, 95, 0.268);
@@ -204,7 +212,15 @@ section .explore .section1_list li:hover {
 section .explore .section1_list li a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 15px;
+}
+section .explore .section1_list li a i {
+  padding-top: 10px;
+}
+section .explore .section1_list li a span {
+  font-size: 9px;
+  margin-left: -5px;
+  text-align: center;
 }
 section .scroll-container {
   display: flex;
@@ -258,9 +274,17 @@ section .videos .filters {
   white-space: nowrap;
   padding-bottom: 16px;
 }
-section .videos .filters #active {
-  background: black;
+section .videos .filters .ismael {
+  border-radius: 50px;
+  border: 1px solid #dbdbdb;
+  text-transform: capitalize;
   color: white;
+  background: black;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 0 0 15px;
+  padding: 8px;
+  border-radius: 10px;
 }
 section .videos .filters .filter-options {
   border-radius: 50px;
@@ -282,6 +306,7 @@ section .videos .video-container {
   grid-template-columns: auto auto auto auto;
   width: 100%;
   background: blue;
+  z-index: -1;
 }
 section .videos .video-container .video {
   width: 95%;

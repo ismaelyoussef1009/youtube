@@ -6,6 +6,7 @@ hamburgerBtn.addEventListener('click',function(){
     if(library.style.display=='block'){
         library.style.display = 'none';
         explore.style.display = 'block';
+        explore.style.
     }else{
         library.style.display = 'block';
         explore.style.display = 'none';
