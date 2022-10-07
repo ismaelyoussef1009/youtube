@@ -49,10 +49,10 @@ section{
     }
 
     .explore{
-        width: 10%;
+        width: 8%;
         height: 100vh;
         position: fixed;
-        // background: red;
+        background: red;
         display: none;
         padding-top: 55px;
         .section1_list{
@@ -122,10 +122,6 @@ section{
         }
     }
 
-    // .ismael{
-    //     width: 100%;
-    //     background: red;
-    
         .videos{//merville this your code
             width: 83%;
             flex-grow: 1;
@@ -332,5 +328,4 @@ section{
                 }
             }
         }
-    // }
-}
+    }

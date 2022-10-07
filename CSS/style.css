@@ -192,9 +192,10 @@ section .library .library_list ul li a span {
   margin-left: 25px;
 }
 section .explore {
-  width: 10%;
+  width: 8%;
   height: 100vh;
   position: fixed;
+  background: red;
   display: none;
   padding-top: 55px;
 }

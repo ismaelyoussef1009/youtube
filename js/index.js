@@ -1,12 +1,14 @@
 var hamburgerBtn = document.getElementById('tooglebar');
 var library = document.getElementById('defaultDisplay');
 var explore = document.getElementById('secondDisplay');
+var videos = document.getElementById("videos_container");
+var filter = document.getElementById("scroll_containers");
 
 hamburgerBtn.addEventListener('click',function(){
     if(library.style.display=='block'){
         library.style.display = 'none';
         explore.style.display = 'block';
-        // explore.style.;
+        videos.style.width = '92%';
     }else{
         library.style.display = 'block';
         explore.style.display = 'none';
