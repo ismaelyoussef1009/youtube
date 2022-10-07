@@ -25,21 +25,23 @@ header .navigation .nav_bar {
 header .navigation .nav_bar .nav_bar_button {
   width: 15%;
   height: 5.2vh;
-  margin-left: 10px;
-  background-color: rgba(182, 177, 177, 0.492);
+  margin-left: 8px;
   border-radius: 50px;
-  margin-top: 7px;
-  position: relative;
+  margin-top: 6px;
+  padding-left: 1px;
   cursor: pointer;
+}
+header .navigation .nav_bar .nav_bar_button:hover {
+  background-color: rgba(182, 177, 177, 0.492);
 }
 header .navigation .nav_bar .nav_bar_button button {
   font-size: 15px;
+  padding: 9px;
   background: none;
   border: none;
 }
 header .navigation .nav_bar .nav_bar_button button i {
   cursor: pointer;
-  position: absolute;
 }
 header .navigation .nav_bar .nav_bar_image {
   margin-left: 18px;
