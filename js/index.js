@@ -1,18 +1,27 @@
 var hamburgerBtn = document.getElementById('tooglebar');
 var library = document.getElementById('defaultDisplay');
 var explore = document.getElementById('secondDisplay');
-var videos = document.getElementById("videos_container");
-var filter = document.getElementById("scroll_containers");
+var videos = document.getElementById("videos_container");//ismael
+var filter = document.getElementById("scroll_containers");//ismael
 
 hamburgerBtn.addEventListener('click',function(){
     if(library.style.display=='block'){
         library.style.display = 'none';
         explore.style.display = 'block';
-        videos.style.width = '92%';
+        videos.style.width = '92%';//ismael
+        videos.style.right = '25%'//ismael
     }else{
         library.style.display = 'block';
         explore.style.display = 'none';
+        videos.style.width = '83%';//ismael
     }
+    //ismael comment.
+    // let moving = document.getElementById("videos_container");
+    // if (moving.style.left == "83%") {
+    //    moving.style.right = "92%";
+    // } else {
+    //    moving.style.left = "83%";
+    // }
 })
 
 // SCROLLBAR LOGIC
