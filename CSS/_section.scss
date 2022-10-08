@@ -49,25 +49,37 @@ section{
     }
 
     .explore{
-        width: 10%;
+        width: 8%;
         height: 100vh;
         position: fixed;
-        // background: red;
+        background: red;
         display: none;
         padding-top: 55px;
         .section1_list{
             list-style: none;
                 li{
-                    width: 100%;
+                    width: 51%;
+                    // background: red;
+                    border-radius: 10px;
                     text-decoration: none;
-                    padding: 6px 0px 6px 20px;
+                    top: 20px;
+                    padding: 8px 0px 15px 20px;
                     &:hover{
                         background-color: rgba(102, 95, 95, 0.268);
                     }
                     a{
                         text-decoration: none;
                         color: black;
-                        font-size: 12px;
+                        font-size: 15px;
+                        i{
+                           padding-top: 10px;
+                        }
+                        span{
+                            font-size: 9px;
+                            margin-left: -5px;
+                            text-align: center;
+                            
+                        }
                     }
                 }
         }
@@ -110,10 +122,6 @@ section{
         }
     }
 
-    // .ismael{
-    //     width: 100%;
-    //     background: red;
-    
         .videos{//merville this your code
             width: 83%;
             flex-grow: 1;
@@ -121,7 +129,6 @@ section{
             position: absolute;
             top: calc(8vh + 65px);
             left: 17%;
-
             .filters::-webkit-scrollbar {
                 display: none;
             }
@@ -137,13 +144,18 @@ section{
                 align-items: center;
                 white-space: nowrap;
                 padding-bottom: 16px;
-                #active{
-                    background: black;
+                .ismael{
+                    border-radius: 50px;
+                    border: 1px solid #dbdbdb; 
+                    text-transform: capitalize;
                     color: white;
+                    background: black;
+                    font-size: 12px;
+                    cursor: pointer;
+                    margin: 0 0 0 15px;
+                    padding: 8px;
+                    border-radius: 10px;
                 }
-                // .active{
-                //     background: red;
-                // }
                 .filter-options{
                     border-radius: 50px;
                     border: 1px solid #dbdbdb; 
@@ -166,6 +178,7 @@ section{
                 grid-template-columns: auto auto auto auto;
                 width: 100%;
                 background: blue;
+                z-index: -1;
                 .video{
                     width: 94%;
                     height: 90%;
