@@ -610,7 +610,7 @@ section .videos .ligne-storie {
   }
 }
 @media (max-width: 992px) {
-  .videos {
+  section .videos {
     width: 83%;
     flex-grow: 1;
     flex-basis: 60%;
@@ -618,10 +618,10 @@ section .videos .ligne-storie {
     top: calc(8vh + 65px);
     left: 17%;
   }
-  .videos .filters::-webkit-scrollbar {
+  section .videos .filters::-webkit-scrollbar {
     display: none;
   }
-  .videos .filters {
+  section .videos .filters {
     overflow-y: hidden;
     overflow-x: scroll;
     height: 65px;
@@ -631,11 +631,11 @@ section .videos .ligne-storie {
     white-space: nowrap;
     padding-bottom: 16px;
   }
-  .videos .filters #active {
+  section .videos .filters #active {
     background: black;
     color: white;
   }
-  .videos .filters .filter-options {
+  section .videos .filters .filter-options {
     border-radius: 50px;
     border: 1px solid #dbdbdb;
     text-transform: capitalize;
@@ -647,16 +647,16 @@ section .videos .ligne-storie {
     border-radius: 10px;
     background: rgba(126, 122, 122, 0.121);
   }
-  .videos .filters .filter-options:hover {
+  section .videos .filters .filter-options:hover {
     background-color: rgba(182, 177, 177, 0.492);
   }
-  .videos .video-container {
+  section .videos .video-container {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
-    background: blue;
+    background: red;
   }
-  .videos .video-container .video {
+  section .videos .video-container .video {
     width: 94%;
     height: 90%;
     margin-right: 2%;
@@ -666,59 +666,59 @@ section .videos .ligne-storie {
     position: relative;
     cursor: pointer;
   }
-  .videos .video-container .video:hover .dots_download {
+  section .videos .video-container .video:hover .dots_download {
     display: block;
   }
-  .videos .video-container .video .videos-image {
+  section .videos .video-container .video .videos-image {
     height: 170px;
   }
-  .videos .video-container .video .videos-image img {
+  section .videos .video-container .video .videos-image img {
     width: 100%;
     height: 100%;
     cursor: pointer;
   }
-  .videos .video-container .video .time {
+  section .videos .video-container .video .time {
     position: absolute;
     top: 149.5px;
     left: 85%;
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
   }
-  .videos .video-container .video .video-detail {
+  section .videos .video-container .video .video-detail {
     display: flex;
     margin-top: 6px;
     position: inherit;
   }
-  .videos .video-container .video .video-detail .author img {
+  section .videos .video-container .video .video-detail .author img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 10px;
   }
-  .videos .video-container .video .video-detail .title {
+  section .videos .video-container .video .video-detail .title {
     display: flex;
     flex-direction: column;
     margin-top: 4px;
     width: 95%;
   }
-  .videos .video-container .video .video-detail .title h3 {
+  section .videos .video-container .video .video-detail .title h3 {
     font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: black;
   }
-  .videos .video-container .video .video-detail .title a {
+  section .videos .video-container .video .video-detail .title a {
     text-decoration: none;
     color: rgb(96, 96, 96);
     font-size: 14px;
   }
-  .videos .video-container .video .video-detail .title span {
+  section .videos .video-container .video .video-detail .title span {
     text-decoration: none;
     color: rgb(96, 96, 96);
     font-size: 14px;
   }
-  .videos .video-container .video .video-detail button {
+  section .videos .video-container .video .video-detail button {
     border: none;
     background-color: transparent;
     outline: none;
@@ -728,12 +728,12 @@ section .videos .ligne-storie {
     margin-top: 10px;
     display: none;
   }
-  .videos hr {
+  section .videos hr {
     border: none;
     border-bottom: 5px solid #ddd;
     margin-bottom: 50px;
   }
-  .videos .shorts {
+  section .videos .shorts {
     display: flex;
     -moz-column-gap: 8px;
          column-gap: 8px;
@@ -741,67 +741,67 @@ section .videos .ligne-storie {
     margin-bottom: 30px;
     margin-top: -20px;
   }
-  .videos .shorts i {
+  section .videos .shorts i {
     font-size: 25px;
     color: red;
   }
-  .videos .shorts h1 {
+  section .videos .shorts h1 {
     font-family: "roboto", arial, sans-serif;
     font-weight: 300;
   }
-  .videos .storie-container {
+  section .videos .storie-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
     -moz-column-gap: 1%;
          column-gap: 1%;
   }
-  .videos .storie-container .storie {
+  section .videos .storie-container .storie {
     width: 98%;
     height: 90%;
     margin-bottom: 10px;
     cursor: pointer;
   }
-  .videos .storie-container .storie:hover .dots_download {
+  section .videos .storie-container .storie:hover .dots_download {
     display: block;
   }
-  .videos .storie-container .storie .storie-image {
+  section .videos .storie-container .storie .storie-image {
     height: 300px;
   }
-  .videos .storie-container .storie .storie-image img {
+  section .videos .storie-container .storie .storie-image img {
     width: 100%;
     height: 100%;
   }
-  .videos .storie-container .storie .storie-title {
+  section .videos .storie-container .storie .storie-title {
     display: flex;
     position: inherit;
     margin-top: 12px;
   }
-  .videos .storie-container .storie .storie-title .description {
+  section .videos .storie-container .storie .storie-title .description {
     width: 88%;
     display: flex;
     flex-direction: column;
   }
-  .videos .storie-container .storie .storie-title .description h3 {
+  section .videos .storie-container .storie .storie-title .description h3 {
     font-family: "roboto", arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: black;
   }
-  .videos .storie-container .storie .storie-title .description a {
+  section .videos .storie-container .storie .storie-title .description a {
     text-decoration: none;
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
-  .videos .storie-container .storie .storie-title .description span {
+  section .videos .storie-container .storie .storie-title .description span {
     text-decoration: none;
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
-  .videos .storie-container .storie .storie-title .description .span {
+  section .videos .storie-container .storie .storie-title .description .span {
     margin-top: -10px;
   }
-  .videos .storie-container .storie .storie-title button {
+  section .videos .storie-container .storie .storie-title button {
     display: none;
     border: none;
     background-color: transparent;
@@ -811,7 +811,7 @@ section .videos .ligne-storie {
     margin-top: 10px;
     margin-left: 14%;
   }
-  .videos .ligne-storie {
+  section .videos .ligne-storie {
     margin-top: 30px;
   }
 }
