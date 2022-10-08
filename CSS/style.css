@@ -321,7 +321,7 @@ section .videos .video-container {
   z-index: -1;
 }
 section .videos .video-container .video {
-  width: 95%;
+  width: 94%;
   height: 90%;
   margin-right: 2%;
   margin-bottom: 40px;
@@ -341,6 +341,13 @@ section .videos .video-container .video .videos-image img {
   height: 100%;
   cursor: pointer;
 }
+section .videos .video-container .video .time {
+  position: absolute;
+  top: 149.5px;
+  left: 85%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
 section .videos .video-container .video .video-detail {
   display: flex;
   margin-top: 6px;
@@ -356,7 +363,7 @@ section .videos .video-container .video .video-detail .author img {
 section .videos .video-container .video .video-detail .title {
   display: flex;
   flex-direction: column;
-  margin-top: -4px;
+  margin-top: 4px;
   width: 95%;
 }
 section .videos .video-container .video .video-detail .title h3 {
@@ -364,9 +371,6 @@ section .videos .video-container .video .video-detail .title h3 {
   font-size: 14px;
   line-height: 18px;
   color: black;
-}
-section .videos .video-container .video .video-detail .title .name {
-  margin-top: -8px;
 }
 section .videos .video-container .video .video-detail .title a {
   text-decoration: none;
@@ -393,21 +397,40 @@ section .videos hr {
   border-bottom: 5px solid #ddd;
   margin-bottom: 50px;
 }
-section .videos .storie-container {
+section .videos .shorts {
   display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+section .videos .shorts i {
+  font-size: 25px;
+  color: red;
+}
+section .videos .shorts h1 {
+  font-family: "roboto", arial, sans-serif;
+  font-weight: 300;
+}
+section .videos .storie-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
   width: 100%;
   -moz-column-gap: 1%;
        column-gap: 1%;
 }
 section .videos .storie-container .storie {
-  width: 12.5%;
+  width: 98%;
+  height: 90%;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 section .videos .storie-container .storie:hover .dots_download {
   display: block;
 }
 section .videos .storie-container .storie .storie-image {
-  height: 70%;
+  height: 300px;
 }
 section .videos .storie-container .storie .storie-image img {
   width: 100%;
@@ -416,7 +439,7 @@ section .videos .storie-container .storie .storie-image img {
 section .videos .storie-container .storie .storie-title {
   display: flex;
   position: inherit;
-  margin-top: -2px;
+  margin-top: 12px;
 }
 section .videos .storie-container .storie .storie-title .description {
   width: 88%;
@@ -449,8 +472,11 @@ section .videos .storie-container .storie .storie-title button {
   outline: none;
   cursor: pointer;
   position: absolute;
-  margin-top: 18px;
-  margin-left: 10%;
+  margin-top: 10px;
+  margin-left: 14%;
+}
+section .videos .ligne-storie {
+  margin-top: 30px;
 }
 
 @media (max-width: 992px) {
@@ -581,6 +607,212 @@ section .videos .storie-container .storie .storie-title button {
     width: 32px;
     border-radius: 50%;
     cursor: pointer;
+  }
+}
+@media (max-width: 992px) {
+  .videos {
+    width: 83%;
+    flex-grow: 1;
+    flex-basis: 60%;
+    position: absolute;
+    top: calc(8vh + 65px);
+    left: 17%;
+  }
+  .videos .filters::-webkit-scrollbar {
+    display: none;
+  }
+  .videos .filters {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 65px;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    white-space: nowrap;
+    padding-bottom: 16px;
+  }
+  .videos .filters #active {
+    background: black;
+    color: white;
+  }
+  .videos .filters .filter-options {
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(126, 122, 122, 0.121);
+  }
+  .videos .filters .filter-options:hover {
+    background-color: rgba(182, 177, 177, 0.492);
+  }
+  .videos .video-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    background: blue;
+  }
+  .videos .video-container .video {
+    width: 94%;
+    height: 90%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+    position: relative;
+    cursor: pointer;
+  }
+  .videos .video-container .video:hover .dots_download {
+    display: block;
+  }
+  .videos .video-container .video .videos-image {
+    height: 170px;
+  }
+  .videos .video-container .video .videos-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 85%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+  }
+  .videos .video-container .video .video-detail {
+    display: flex;
+    margin-top: 6px;
+    position: inherit;
+  }
+  .videos .video-container .video .video-detail .author img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .videos .video-container .video .video-detail .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    width: 95%;
+  }
+  .videos .video-container .video .video-detail .title h3 {
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  .videos .video-container .video .video-detail .title a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  .videos .video-container .video .video-detail .title span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  .videos .video-container .video .video-detail button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+    display: none;
+  }
+  .videos hr {
+    border: none;
+    border-bottom: 5px solid #ddd;
+    margin-bottom: 50px;
+  }
+  .videos .shorts {
+    display: flex;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+  .videos .shorts i {
+    font-size: 25px;
+    color: red;
+  }
+  .videos .shorts h1 {
+    font-family: "roboto", arial, sans-serif;
+    font-weight: 300;
+  }
+  .videos .storie-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  .videos .storie-container .storie {
+    width: 98%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .videos .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  .videos .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  .videos .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .videos .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  .videos .storie-container .storie .storie-title .description {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+  .videos .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  .videos .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  .videos .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  .videos .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14%;
+  }
+  .videos .ligne-storie {
+    margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -841,8 +1073,8 @@ section .videos .storie-container .storie .storie-title button {
     display: flex;
   }
   section .library {
+    display: none;
     overflow-y: scroll;
-    width: 22%;
     background: blueviolet;
   }
   section .library .library_list {
@@ -907,8 +1139,8 @@ section .videos .storie-container .storie .storie-title button {
     cursor: pointer;
   }
   section .videos .video-container {
-    display: block;
-    width: 25%;
+    display: grid;
+    grid-template-columns: auto;
   }
   section .videos .video-container .video {
     width: 95%;
@@ -974,5 +1206,70 @@ section .videos .storie-container .storie .storie-title button {
     margin-left: 95%;
     margin-top: 10px;
     display: none;
+  }
+  section .videos .storie-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  section .videos .storie-container .storie {
+    width: 98%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  section .videos .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  section .videos .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  section .videos .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  section .videos .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  section .videos .storie-container .storie .storie-title .description {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .videos .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .videos .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  section .videos .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14%;
+  }
+  section .videos .ligne-storie {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
