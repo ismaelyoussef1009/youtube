@@ -2,8 +2,9 @@
 section{
     display: flex;
     .library{
+        display: none;
         overflow-y: scroll;
-        width: 22%;
+        // width: 22%;
         background: blueviolet;
         // display: none;
         .library_list{
@@ -71,9 +72,12 @@ section{
             }
         }
         .video-container{
-            display: block;
-            // grid-template-columns: auto;
-            width: 25%;
+            display: grid;
+            // width: 80%;
+            // margin-left: 10%;
+            // margin-right: 10%;
+            grid-template-columns: auto;
+            // width: 25%;
             .video{
                 width: 95%;
                 margin-right: 2%;
@@ -144,6 +148,81 @@ section{
                 }
             }
     
+        }
+        .storie-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+            column-gap: 1%;
+                
+            .storie{
+                width: 98%;
+                height: 90%;
+                margin-bottom: 10px;
+                cursor: pointer;
+                &:hover{
+                    .dots_download{
+                        display: block;
+                    }
+                }
+
+                .storie-image{
+                    height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .storie-title{
+                    display: flex;
+                    position: inherit;
+                    margin-top: 12px;
+
+                    .description{
+                        width: 88%;
+                        display: flex;
+                        flex-direction: column;
+
+                        h3{
+                            font-family: 'roboto', arial,sans-serif;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: black;
+                        }
+
+                        a{
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: rgb(96, 96, 96);
+                        }
+
+                        span{
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: rgb(96, 96, 96);
+                        }
+                        .span{
+                            margin-top: -10px;
+                        }
+                    }
+
+                    button{
+                        display: none;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                        cursor: pointer;
+                        position: absolute;
+                        margin-top: 10px;
+                        margin-left: 14%;
+                    }
+                }
+            }
+        }
+        .ligne-storie{
+            margin-top: 30px;
         }
     }
 }
