@@ -1,7 +1,26 @@
 section{
     display: flex;
     .library{
-        overflow-y: scroll;
+        // overflow-y: scroll;
+        &:hover{
+            cursor: pointer;
+            overflow-y: scroll;
+        }
+        // .library::-webkit-scrollbar{
+        //     width: 2em;
+        //     color: red;
+        //     overflow-y: scroll;
+        // }
+        // .library::-webkit-scrollbar-track{
+        //     width: 2em;
+        //     background: red;
+        //     overflow-y: scroll;
+        // }
+        // .library::-webkit-scrollbar-track-thumb{
+        //     width: 2em;
+        //     background: red;
+        //     overflow-y: scroll;
+        // }
         width: 17%;
         flex-grow: 1;
         height: 100vh;
@@ -46,6 +65,11 @@ section{
                 }
             }
         }
+        hr{
+            width: 86%;
+            margin: 12px 0 12px 0;
+            border: 0.5px solid rgba(211, 211, 211, 0.363);
+        }
     }
 
     .explore{
@@ -58,7 +82,7 @@ section{
         .section1_list{
             list-style: none;
                 li{
-                    width: 51%;
+                    width: 60%;
                     // background: red;
                     border-radius: 10px;
                     text-decoration: none;
@@ -95,7 +119,7 @@ section{
         width: 83%;
         left: 17%;
         z-index: 1;
-
+        background: red;
         .left-button-container {
             // background-color: red;
             background: linear-gradient(to right, white 50%,rgba(255,255,255,0) 100%);
@@ -107,8 +131,8 @@ section{
     
         .right-button-container{
             background-color: blue;
-            background: linear-gradient(to left, white 100%,rgba(255,255,255,0) 100%);
-            padding-left: 30px;
+            background: linear-gradient(to left, white 50%,rgba(255,255,255,0) 100%);
+            padding-left: 50px;
             padding-bottom: 18px;
             position: absolute;
             right: 0;
@@ -143,7 +167,7 @@ section{
                 // border-bottom: 1px solid #dbdbdb;
                 align-items: center;
                 white-space: nowrap;
-                padding-bottom: 16px;
+                padding-bottom: 14px;
                 .ismael{
                     border-radius: 50px;
                     border: 1px solid #dbdbdb; 
@@ -161,7 +185,7 @@ section{
                     border: 1px solid #dbdbdb; 
                     text-transform: capitalize;
                     color: #242424;
-                    font-size: 12px;
+                    font-size: 11.5px;
                     cursor: pointer;
                     margin: 0 0 0 15px;
                     padding: 8px;
