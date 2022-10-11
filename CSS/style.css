@@ -149,6 +149,7 @@ section {
   display: flex;
 }
 section .library {
+  overflow-y: scroll;
   width: 17%;
   flex-grow: 1;
   height: 100vh;
@@ -160,13 +161,33 @@ section .library {
 }
 section .library:hover {
   cursor: pointer;
+}
+section .library:hover ::-webkit-scrollbar {
+  width: 6px;
+  overflow-y: scroll;
+}
+section .library:hover ::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
   overflow-y: scroll;
 }
 section .library .library_list {
   display: block;
 }
+section .library .library_list p {
+  font-size: 12px;
+  text-align: left;
+  padding: 5px 0 50px 0;
+}
+section .library .library_list h6 {
+  font-size: 15px;
+}
 section .library .library_list ul {
   list-style: none;
+}
+section .library .library_list ul h3 {
+  font-size: 13px;
+  margin: 15px 0 11px 10px;
 }
 section .library .library_list ul .man {
   background-color: rgba(126, 122, 122, 0.121);
@@ -192,7 +213,8 @@ section .library .library_list ul li a i {
   font-size: 15px;
 }
 section .library .library_list ul li a span {
-  margin-left: 25px;
+  margin-left: 22px;
+  text-align: center;
 }
 section .library hr {
   width: 86%;
@@ -248,17 +270,23 @@ section .scroll-container {
 section .scroll-container .left-button-container {
   background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
   padding-right: 50px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   position: absolute;
   left: 0;
+}
+section .scroll-container .left-button-container button {
+  margin-top: 8px;
 }
 section .scroll-container .right-button-container {
   background-color: blue;
   background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
   padding-left: 50px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   position: absolute;
   right: 0;
+}
+section .scroll-container .right-button-container button {
+  margin-top: 8px;
 }
 section .scroll-container button {
   border: none;
@@ -317,7 +345,7 @@ section .videos .video-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 100%;
-  background: blue;
+  padding: 12px;
   z-index: -1;
 }
 section .videos .video-container .video {
