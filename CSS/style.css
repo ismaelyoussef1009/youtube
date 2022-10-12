@@ -610,53 +610,13 @@ section .videos .ligne-storie {
   }
 }
 @media (max-width: 992px) {
-  section .videos {
-    width: 83%;
-    flex-grow: 1;
-    flex-basis: 60%;
-    position: absolute;
-    top: calc(8vh + 65px);
-    left: 17%;
-  }
-  section .videos .filters::-webkit-scrollbar {
-    display: none;
-  }
-  section .videos .filters {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    height: 65px;
-    display: flex;
-    background: #fff;
-    align-items: center;
-    white-space: nowrap;
-    padding-bottom: 16px;
-  }
-  section .videos .filters #active {
-    background: black;
-    color: white;
-  }
-  section .videos .filters .filter-options {
-    border-radius: 50px;
-    border: 1px solid #dbdbdb;
-    text-transform: capitalize;
-    color: #242424;
-    font-size: 12px;
-    cursor: pointer;
-    margin: 0 0 0 15px;
-    padding: 8px;
-    border-radius: 10px;
-    background: rgba(126, 122, 122, 0.121);
-  }
-  section .videos .filters .filter-options:hover {
-    background-color: rgba(182, 177, 177, 0.492);
-  }
-  section .videos .video-container {
+  section .video-container {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
     background: red;
   }
-  section .videos .video-container .video {
+  section .video-container .video {
     width: 94%;
     height: 90%;
     margin-right: 2%;
@@ -666,59 +626,59 @@ section .videos .ligne-storie {
     position: relative;
     cursor: pointer;
   }
-  section .videos .video-container .video:hover .dots_download {
+  section .video-container .video:hover .dots_download {
     display: block;
   }
-  section .videos .video-container .video .videos-image {
+  section .video-container .video .videos-image {
     height: 170px;
   }
-  section .videos .video-container .video .videos-image img {
+  section .video-container .video .videos-image img {
     width: 100%;
     height: 100%;
     cursor: pointer;
   }
-  section .videos .video-container .video .time {
+  section .video-container .video .time {
     position: absolute;
     top: 149.5px;
     left: 85%;
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
   }
-  section .videos .video-container .video .video-detail {
+  section .video-container .video .video-detail {
     display: flex;
     margin-top: 6px;
     position: inherit;
   }
-  section .videos .video-container .video .video-detail .author img {
+  section .video-container .video .video-detail .author img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 10px;
   }
-  section .videos .video-container .video .video-detail .title {
+  section .video-container .video .video-detail .title {
     display: flex;
     flex-direction: column;
     margin-top: 4px;
     width: 95%;
   }
-  section .videos .video-container .video .video-detail .title h3 {
+  section .video-container .video .video-detail .title h3 {
     font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: black;
   }
-  section .videos .video-container .video .video-detail .title a {
+  section .video-container .video .video-detail .title a {
     text-decoration: none;
     color: rgb(96, 96, 96);
     font-size: 14px;
   }
-  section .videos .video-container .video .video-detail .title span {
+  section .video-container .video .video-detail .title span {
     text-decoration: none;
     color: rgb(96, 96, 96);
     font-size: 14px;
   }
-  section .videos .video-container .video .video-detail button {
+  section .video-container .video .video-detail button {
     border: none;
     background-color: transparent;
     outline: none;
@@ -728,12 +688,12 @@ section .videos .ligne-storie {
     margin-top: 10px;
     display: none;
   }
-  section .videos hr {
+  section hr {
     border: none;
     border-bottom: 5px solid #ddd;
     margin-bottom: 50px;
   }
-  section .videos .shorts {
+  section .shorts {
     display: flex;
     -moz-column-gap: 8px;
          column-gap: 8px;
@@ -741,67 +701,67 @@ section .videos .ligne-storie {
     margin-bottom: 30px;
     margin-top: -20px;
   }
-  section .videos .shorts i {
+  section .shorts i {
     font-size: 25px;
     color: red;
   }
-  section .videos .shorts h1 {
+  section .shorts h1 {
     font-family: "roboto", arial, sans-serif;
     font-weight: 300;
   }
-  section .videos .storie-container {
+  section .storie-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
     -moz-column-gap: 1%;
          column-gap: 1%;
   }
-  section .videos .storie-container .storie {
+  section .storie-container .storie {
     width: 98%;
     height: 90%;
     margin-bottom: 10px;
     cursor: pointer;
   }
-  section .videos .storie-container .storie:hover .dots_download {
+  section .storie-container .storie:hover .dots_download {
     display: block;
   }
-  section .videos .storie-container .storie .storie-image {
+  section .storie-container .storie .storie-image {
     height: 300px;
   }
-  section .videos .storie-container .storie .storie-image img {
+  section .storie-container .storie .storie-image img {
     width: 100%;
     height: 100%;
   }
-  section .videos .storie-container .storie .storie-title {
+  section .storie-container .storie .storie-title {
     display: flex;
     position: inherit;
     margin-top: 12px;
   }
-  section .videos .storie-container .storie .storie-title .description {
+  section .storie-container .storie .storie-title .description {
     width: 88%;
     display: flex;
     flex-direction: column;
   }
-  section .videos .storie-container .storie .storie-title .description h3 {
+  section .storie-container .storie .storie-title .description h3 {
     font-family: "roboto", arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: black;
   }
-  section .videos .storie-container .storie .storie-title .description a {
+  section .storie-container .storie .storie-title .description a {
     text-decoration: none;
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
-  section .videos .storie-container .storie .storie-title .description span {
+  section .storie-container .storie .storie-title .description span {
     text-decoration: none;
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
-  section .videos .storie-container .storie .storie-title .description .span {
+  section .storie-container .storie .storie-title .description .span {
     margin-top: -10px;
   }
-  section .videos .storie-container .storie .storie-title button {
+  section .storie-container .storie .storie-title button {
     display: none;
     border: none;
     background-color: transparent;
@@ -811,7 +771,7 @@ section .videos .ligne-storie {
     margin-top: 10px;
     margin-left: 14%;
   }
-  section .videos .ligne-storie {
+  section .ligne-storie {
     margin-top: 30px;
   }
 }
