@@ -225,7 +225,6 @@ section .explore {
   width: 8%;
   height: 100vh;
   position: fixed;
-  background: red;
   display: none;
   padding-top: 55px;
 }
@@ -265,7 +264,6 @@ section .scroll-container {
   width: 83%;
   left: 17%;
   z-index: 1;
-  background: red;
 }
 section .scroll-container .left-button-container {
   background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
