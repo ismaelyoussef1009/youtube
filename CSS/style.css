@@ -177,10 +177,11 @@ section .library .library_list {
 section .library .library_list p {
   font-size: 12px;
   text-align: left;
-  padding: 5px 0 50px 0;
+  padding: 5px 0 10px 10px;
 }
 section .library .library_list h6 {
-  font-size: 15px;
+  font-size: 12px;
+  padding-bottom: 100px;
 }
 section .library .library_list ul {
   list-style: none;
@@ -253,6 +254,9 @@ section .explore .section1_list li a span {
   font-size: 9px;
   margin-left: -5px;
   text-align: center;
+}
+section .explore .section1_list li a .dia {
+  margin-left: -15px;
 }
 section .scroll-container {
   display: flex;
@@ -332,6 +336,7 @@ section .videos .filters .filter-options {
   font-size: 11.5px;
   cursor: pointer;
   margin: 0 0 0 15px;
+  font-family: "roboto", Arial, sans-serif;
   padding: 8px;
   border-radius: 10px;
   background: rgba(126, 122, 122, 0.121);
@@ -640,7 +645,6 @@ section .videos .ligne-storie {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
-    background: red;
   }
   section .video-container .video {
     width: 94%;
@@ -924,6 +928,172 @@ section .videos .ligne-storie {
     margin-top: 12px;
   }
 }
+@media (max-width: 768px) {
+  section .video-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    background: red;
+  }
+  section .video-container .video {
+    width: 94%;
+    height: 90%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+    position: relative;
+    cursor: pointer;
+  }
+  section .video-container .video:hover .dots_download {
+    display: block;
+  }
+  section .video-container .video .videos-image {
+    height: 170px;
+  }
+  section .video-container .video .videos-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  section .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 85%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+  }
+  section .video-container .video .video-detail {
+    display: flex;
+    margin-top: 6px;
+    position: inherit;
+  }
+  section .video-container .video .video-detail .author img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  section .video-container .video .video-detail .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    width: 95%;
+  }
+  section .video-container .video .video-detail .title h3 {
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .video-container .video .video-detail .title a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .video-container .video .video-detail .title span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .video-container .video .video-detail button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+    display: none;
+  }
+  section hr {
+    border: none;
+    border-bottom: 5px solid #ddd;
+    margin-bottom: 50px;
+  }
+  section .shorts {
+    display: flex;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+  section .shorts i {
+    font-size: 25px;
+    color: red;
+  }
+  section .shorts h1 {
+    font-family: "roboto", arial, sans-serif;
+    font-weight: 300;
+  }
+  section .storie-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  section .storie-container .storie {
+    width: 98%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  section .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  section .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  section .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  section .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  section .storie-container .storie .storie-title .description {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  section .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14%;
+  }
+  section .ligne-storie {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 576px) {
   header {
     /*end of nav_bar, nav_bar_button & nav_bar_image*/
@@ -933,28 +1103,36 @@ section .videos .ligne-storie {
     width: 100%;
     height: 8vh;
     display: flex;
+    background: white;
+    position: fixed;
+    z-index: 1;
   }
   header .navigation .nav_bar {
-    width: 18.3%;
-    height: 8vh;
+    width: 50%;
+    height: 10vh;
     display: flex;
+    top: 0px;
+    background: blue;
   }
   header .navigation .nav_bar .nav_bar_button {
-    margin-left: 8px;
-    padding-top: 2px;
+    width: 15%;
+    height: 5.2vh;
+    border-radius: 50px;
+    background: red;
     cursor: pointer;
   }
+  header .navigation .nav_bar .nav_bar_button:hover {
+    background-color: rgba(182, 177, 177, 0.492);
+  }
   header .navigation .nav_bar .nav_bar_button button {
-    font-size: 20px;
-    padding: 10px;
-    background: none;
-    border: none;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
   header .navigation .nav_bar .nav_bar_button button i {
     cursor: pointer;
   }
   header .navigation .nav_bar .nav_bar_image {
-    margin-left: 18px;
+    margin-left: 50px;
   }
   header .navigation .nav_bar .nav_bar_image img {
     width: 70px;
@@ -962,25 +1140,24 @@ section .videos .ligne-storie {
     cursor: pointer;
   }
   header .search_bar {
-    width: 58.3%;
-    height: 8vh;
+    display: none;
   }
   header .search_bar .search_bar_input {
     display: flex;
-    width: 98%;
-    height: 8vh;
     padding-bottom: 20px;
     /*end of search_bar and search_microphone*/
   }
   header .search_bar .search_bar_input .search {
-    width: 62%;
-    height: 5vh;
+    display: none;
+    width: 63%;
+    height: 5.4vh;
     font-size: 32px;
     margin-left: 140px;
-    margin-top: 5px;
+    margin-top: 6px;
     padding-bottom: 10px;
     padding-left: 8px;
-    border-radius: 1px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
     border: 1px solid rgba(122, 121, 121, 0.492);
   }
   header .search_bar .search_bar_input .search::-moz-placeholder {
@@ -996,22 +1173,16 @@ section .videos .ligne-storie {
     font-size: 13px;
   }
   header .search_bar .search_bar_input .search_btn {
-    width: 8%;
-    height: 5vh;
-    margin-top: 5px;
-    background: rgba(135, 133, 133, 0.078);
-    border: 1px solid rgba(128, 128, 128, 0.492);
-    border-radius: 2px;
-    /* background: red; */
-    border-left: none;
-    cursor: pointer;
+    margin-top: 6px;
+    margin-left: 20px;
+    border: none;
   }
   header .search_bar .search_bar_input .search_btn i {
     font-size: 22px;
     border: none;
   }
   header .search_bar .search_bar_input .search_bar_microphone {
-    width: 4.2%;
+    width: 4.5%;
     height: 5vh;
     background: rgba(184, 183, 183, 0.134);
     margin-left: 7px;
@@ -1022,11 +1193,12 @@ section .videos .ligne-storie {
   header .search_bar .search_bar_input .search_bar_microphone i {
     padding-top: 8px;
     font-size: 15px;
-    padding-left: 8.5px;
+    padding-left: 10px;
     border: 50px;
   }
   header .notification_bar {
     width: 24%;
+    margin-right: 100px;
     position: relative;
   }
   header .notification_bar .video {
@@ -1063,9 +1235,6 @@ section .videos .ligne-storie {
     overflow-y: scroll;
     background: blueviolet;
   }
-  section .library .library_list {
-    display: block;
-  }
   section .library .library_list ul {
     list-style: none;
   }
@@ -1086,7 +1255,6 @@ section .videos .ligne-storie {
   }
   section .explore {
     width: 7%;
-    background: red;
     display: none;
   }
   section .explore .section1_list {
@@ -1106,9 +1274,10 @@ section .videos .ligne-storie {
     font-size: 12px;
   }
   section .videos {
-    width: 100%;
+    width: 70%;
   }
   section .videos .filters {
+    width: 100%;
     height: 50px;
     display: flex;
     background: #fff;
