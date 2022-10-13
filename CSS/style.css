@@ -499,9 +499,6 @@ section .videos .storie-container .storie .storie-title .description span {
   font-size: 14px;
   color: rgb(96, 96, 96);
 }
-section .videos .storie-container .storie .storie-title .description .span {
-  margin-top: -10px;
-}
 section .videos .storie-container .storie .storie-title button {
   display: none;
   border: none;
