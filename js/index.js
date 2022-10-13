@@ -8,20 +8,20 @@ hamburgerBtn.addEventListener('click',function(){
     if(library.style.display=='block'){
         library.style.display = 'none';
         explore.style.display = 'block';
+
         videos.style.width = '92%';//ismael
-        videos.style.right = '25%'//ismael
+        videos.style.left = '8%'//ismael
+        filter.style.width = '92%';
+        filter.style.left = '8%'
     }else{
         library.style.display = 'block';
         explore.style.display = 'none';
+
         videos.style.width = '83%';//ismael
+        videos.style.left = '17%'//ismael
+        filter.style.width = '92%';
+        filter.style.left = '17%';
     }
-    //ismael comment.
-    // let moving = document.getElementById("videos_container");
-    // if (moving.style.left == "83%") {
-    //    moving.style.right = "92%";
-    // } else {
-    //    moving.style.left = "83%";
-    // }
 })
 
 // SCROLLBAR LOGIC
