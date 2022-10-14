@@ -149,7 +149,6 @@ section {
   display: flex;
 }
 section .library {
-  overflow-y: scroll;
   width: 17%;
   flex-grow: 1;
   height: 100vh;
@@ -161,15 +160,14 @@ section .library {
 }
 section .library:hover {
   cursor: pointer;
+  overflow-y: scroll;
 }
 section .library:hover ::-webkit-scrollbar {
   width: 6px;
-  overflow-y: scroll;
 }
 section .library:hover ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 10px;
-  overflow-y: scroll;
 }
 section .library .library_list {
   display: block;
