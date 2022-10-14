@@ -934,7 +934,6 @@ section .videos .ligne-storie {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    background: red;
   }
   section .video-container .video {
     width: 94%;
@@ -1114,12 +1113,12 @@ section .videos .ligne-storie {
     display: flex;
     top: 0px;
     background: blue;
+    position: relative;
   }
   header .navigation .nav_bar .nav_bar_button {
     width: 15%;
     height: 5.2vh;
     border-radius: 50px;
-    background: red;
     cursor: pointer;
   }
   header .navigation .nav_bar .nav_bar_button:hover {
@@ -1131,6 +1130,9 @@ section .videos .ligne-storie {
   }
   header .navigation .nav_bar .nav_bar_button button i {
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 10px;
   }
   header .navigation .nav_bar .nav_bar_image {
     margin-left: 50px;
@@ -1285,6 +1287,9 @@ section .videos .ligne-storie {
     border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
     align-items: center;
+    position: absolute;
+    top: 3vh;
+    left: -50px;
   }
   section .videos .filters .filter-options {
     border-radius: 50px;

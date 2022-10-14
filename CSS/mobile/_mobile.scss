@@ -16,6 +16,7 @@
                 display: flex;
                 top: 0px;
                 background: blue;
+                position: relative;
                 .nav_bar_button{
                     width: 15%;
                     height: 5.2vh;
@@ -23,7 +24,8 @@
                     border-radius: 50px;
                     // margin-bottom: 80px;
                     // padding-left: 1px;
-                    background: red;
+                    // background: red;
+                    
                     cursor: pointer;
                     &:hover{
                         background-color: rgba(182, 177, 177, 0.492);
@@ -35,6 +37,9 @@
                         // border:none;
                         i{
                             cursor: pointer;
+                            position: absolute;
+                            top: 20px;
+                            left: 10px;
                         }
                     }
                 }
