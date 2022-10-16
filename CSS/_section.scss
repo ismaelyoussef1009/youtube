@@ -151,12 +151,12 @@ section{
         width: 83%;
         left: 17%;
         z-index: 1;
-        // background: red;
+        background: red;
         .left-button-container {
             // background-color: red;
             background: linear-gradient(to right, white 50%,rgba(255,255,255,0) 100%);
             padding-right: 50px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             position: absolute;
             left: 0;
             button{
@@ -165,10 +165,10 @@ section{
         }
     
         .right-button-container{
-            background-color: blue;
+            // background-color: blue;
             background: linear-gradient(to left, white 50%,rgba(255,255,255,0) 100%);
             padding-left: 50px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             position: absolute;
             right: 0;
             button{
@@ -205,14 +205,15 @@ section{
                 // border-bottom: 1px solid #dbdbdb;
                 align-items: center;
                 white-space: nowrap;
-                padding-bottom: 14px;
+                padding-bottom: 1px;
+                // border-radius: 10px;
                 .ismael{
                     border-radius: 50px;
                     border: 1px solid #dbdbdb; 
                     text-transform: capitalize;
                     color: white;
                     background: black;
-                    font-size: 12px;
+                    font-size: 14px;
                     cursor: pointer;
                     margin: 0 0 0 15px;
                     padding: 8px;
@@ -223,7 +224,7 @@ section{
                     border: 1px solid #dbdbdb; 
                     text-transform: capitalize;
                     color: #242424;
-                    font-size: 11.5px;
+                    font-size: 10px;
                     cursor: pointer;
                     margin: 0 0 0 15px;
                     font-family: 'roboto', Arial, sans-serif;
