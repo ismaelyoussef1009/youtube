@@ -766,22 +766,27 @@ section .videos .ligne-storie {
     grid-template-columns: auto;
   }
   section .videos .video-container .video {
-    width: 95%;
-    margin-right: 2%;
-    -moz-column-gap: 3%;
-         column-gap: 3%;
+    width: 100%;
     position: relative;
   }
   section .videos .video-container .video:hover .dots_download {
     display: block;
   }
   section .videos .video-container .video .videos-image {
-    height: 53%;
+    height: 170px;
   }
   section .videos .video-container .video .videos-image img {
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
+  section .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 85%;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
   }
   section .videos .video-container .video .video-detail {
     display: flex;
@@ -798,17 +803,13 @@ section .videos .ligne-storie {
   section .videos .video-container .video .video-detail .title {
     display: flex;
     flex-direction: column;
-    margin-top: -4px;
-    width: 95%;
+    width: 93%;
   }
   section .videos .video-container .video .video-detail .title h3 {
     font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #030303;
-  }
-  section .videos .video-container .video .video-detail .title .name {
-    margin-top: -8px;
   }
   section .videos .video-container .video .video-detail .title a {
     text-decoration: none;
@@ -838,7 +839,7 @@ section .videos .ligne-storie {
          column-gap: 1%;
   }
   section .videos .storie-container .storie {
-    width: 98%;
+    width: 97%;
     height: 90%;
     margin-bottom: 10px;
     cursor: pointer;
@@ -890,7 +891,7 @@ section .videos .ligne-storie {
     cursor: pointer;
     position: absolute;
     margin-top: 10px;
-    margin-left: 14%;
+    margin-left: 45%;
   }
   section .videos .ligne-storie {
     margin-top: 30px;
