@@ -369,7 +369,7 @@ section .videos .video-container .video:hover .dots_download {
   display: block;
 }
 section .videos .video-container .video .videos-image {
-  height: 170px;
+  height: 160px;
 }
 section .videos .video-container .video .videos-image img {
   width: 100%;
@@ -378,7 +378,7 @@ section .videos .video-container .video .videos-image img {
 }
 section .videos .video-container .video .time {
   position: absolute;
-  top: 149.5px;
+  top: 140px;
   left: 85%;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
@@ -389,8 +389,8 @@ section .videos .video-container .video .video-detail {
   position: inherit;
 }
 section .videos .video-container .video .video-detail .author img {
-  height: 40px;
-  width: 40px;
+  height: 37px;
+  width: 37px;
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 10px;
@@ -477,7 +477,7 @@ section .videos .storie-container .storie .storie-title {
   margin-top: 12px;
 }
 section .videos .storie-container .storie .storie-title .description {
-  width: 88%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -505,12 +505,502 @@ section .videos .storie-container .storie .storie-title button {
   cursor: pointer;
   position: absolute;
   margin-top: 10px;
-  margin-left: 14%;
+  margin-left: 12%;
 }
 section .videos .ligne-storie {
   margin-top: 30px;
 }
 
+@media (max-width: 992px) {
+  section {
+    display: flex;
+  }
+  section .library {
+    display: none;
+    overflow-y: scroll;
+    background: blueviolet;
+  }
+  section .library .library_list ul {
+    list-style: none;
+  }
+  section .library .library_list ul li {
+    width: 100%;
+    padding: 6px 0px 6px 20px;
+  }
+  section .library .library_list ul li:hover {
+    background-color: rgba(126, 122, 122, 0.121);
+  }
+  section .library .library_list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .library .library_list ul li a span {
+    margin-left: 25px;
+  }
+  section .explore {
+    width: 7%;
+    display: none;
+  }
+  section .explore .section1_list {
+    list-style: none;
+  }
+  section .explore .section1_list li {
+    width: 100%;
+    text-decoration: none;
+    padding: 6px 0px 6px 20px;
+  }
+  section .explore .section1_list li:hover {
+    background-color: rgba(102, 95, 95, 0.268);
+  }
+  section .explore .section1_list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .scroll-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 8vh;
+    width: 83%;
+    left: 17%;
+    z-index: 1;
+    background: red;
+  }
+  section .scroll-container .left-button-container {
+    background-color: red;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 0;
+  }
+  section .scroll-container .left-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container .right-button-container {
+    background-color: blue;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0;
+  }
+  section .scroll-container .right-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  section .videos {
+    width: 70%;
+  }
+  section .videos .filters {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+    left: -50px;
+  }
+  section .videos .filters .filter-options {
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  section .videos .video-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  section .videos .video-container .video {
+    width: 95%;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    position: relative;
+  }
+  section .videos .video-container .video:hover .dots_download {
+    display: block;
+  }
+  section .videos .video-container .video .videos-image {
+    height: 170px;
+  }
+  section .videos .video-container .video .videos-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  section .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 80%;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+  }
+  section .videos .video-container .video .video-detail {
+    display: flex;
+    margin-top: 6px;
+    position: inherit;
+  }
+  section .videos .video-container .video .video-detail .author img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  section .videos .video-container .video .video-detail .title {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+  section .videos .video-container .video .video-detail .title h3 {
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #030303;
+  }
+  section .videos .video-container .video .video-detail .title a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail .title span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+    display: none;
+  }
+  section .videos .storie-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  section .videos .storie-container .storie {
+    width: 97%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  section .videos .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  section .videos .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  section .videos .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  section .videos .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  section .videos .storie-container .storie .storie-title .description {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .videos .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .videos .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  section .videos .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20%;
+  }
+  section .videos .ligne-storie {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    display: flex;
+  }
+  section .library {
+    display: none;
+    overflow-y: scroll;
+    background: blueviolet;
+  }
+  section .library .library_list ul {
+    list-style: none;
+  }
+  section .library .library_list ul li {
+    width: 100%;
+    padding: 6px 0px 6px 20px;
+  }
+  section .library .library_list ul li:hover {
+    background-color: rgba(126, 122, 122, 0.121);
+  }
+  section .library .library_list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .library .library_list ul li a span {
+    margin-left: 25px;
+  }
+  section .explore {
+    width: 7%;
+    display: none;
+  }
+  section .explore .section1_list {
+    list-style: none;
+  }
+  section .explore .section1_list li {
+    width: 100%;
+    text-decoration: none;
+    padding: 6px 0px 6px 20px;
+  }
+  section .explore .section1_list li:hover {
+    background-color: rgba(102, 95, 95, 0.268);
+  }
+  section .explore .section1_list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .scroll-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 8vh;
+    width: 83%;
+    left: 17%;
+    z-index: 1;
+    background: red;
+  }
+  section .scroll-container .left-button-container {
+    background-color: red;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 0;
+  }
+  section .scroll-container .left-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container .right-button-container {
+    background-color: blue;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0;
+  }
+  section .scroll-container .right-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  section .videos {
+    width: 70%;
+  }
+  section .videos .filters {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+    left: -50px;
+  }
+  section .videos .filters .filter-options {
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  section .videos .video-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  section .videos .video-container .video {
+    width: 95%;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    position: relative;
+  }
+  section .videos .video-container .video:hover .dots_download {
+    display: block;
+  }
+  section .videos .video-container .video .videos-image {
+    height: 170px;
+  }
+  section .videos .video-container .video .videos-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  section .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 80%;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+  }
+  section .videos .video-container .video .video-detail {
+    display: flex;
+    margin-top: 6px;
+    position: inherit;
+  }
+  section .videos .video-container .video .video-detail .author img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  section .videos .video-container .video .video-detail .title {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+  section .videos .video-container .video .video-detail .title h3 {
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #030303;
+  }
+  section .videos .video-container .video .video-detail .title a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail .title span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+    display: none;
+  }
+  section .videos .storie-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  section .videos .storie-container .storie {
+    width: 97%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  section .videos .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  section .videos .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  section .videos .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  section .videos .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  section .videos .storie-container .storie .storie-title .description {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .videos .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .videos .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  section .videos .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30%;
+  }
+  section .videos .ligne-storie {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 576px) {
   header {
     /*end of nav_bar, nav_bar_button & nav_bar_image*/
@@ -879,9 +1369,6 @@ section .videos .ligne-storie {
     text-decoration: none;
     font-size: 14px;
     color: rgb(96, 96, 96);
-  }
-  section .videos .storie-container .storie .storie-title .description .span {
-    margin-top: -10px;
   }
   section .videos .storie-container .storie .storie-title button {
     display: none;
