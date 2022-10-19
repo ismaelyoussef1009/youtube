@@ -23,9 +23,9 @@ header{
                     margin-top: 6px;
                     padding-left: 1px;
                     cursor: pointer;
-                    &:hover{
-                        background-color: rgba(182, 177, 177, 0.492);
-                    }
+                    // &:hover{
+                    //     background-color: rgba(182, 177, 177, 0.492);
+                    // }
                     button {
                         font-size: 15px;
                         padding: 9px;
@@ -85,6 +85,9 @@ header{
                     // background: rgb(39, 18, 203);
                     border-left: none;
                     cursor: pointer;
+                    &:hover{
+                        background-color: rgba(182, 177, 177, 0.492);
+                    }
                     i{
                         font-size: 22px;
                         border: none;
@@ -113,27 +116,41 @@ header{
             // background: rosybrown;
             position: relative;
             .video{
+                width: 10%;
+                height: 5vh;
+                padding: 8px 0 0 6px;
+                border-radius: 30px;
                 margin-left: 150px;
-                font-size: 16px;
-                margin-top: 15px;
+                font-size: 15px;
+                margin-top: 5px;
                 cursor: pointer;
+                &:hover{
+                    background-color: rgba(182, 177, 177, 0.492);
+                }
             }
             .bell{
-                // background: red;
-                margin-left: 19px;
-                margin-top: 12px;
-                font-size: 18px;
+                width: 10%;
+                height: 5vh;
+                padding: 8px 0 0 7.5px;
+                border-radius: 30px;
+                margin-left: 5px;
+                margin-top: 8px;
+                font-size: 16px;
                 cursor: pointer;
+                &:hover{
+                    background-color: rgba(182, 177, 177, 0.492);
+                }
+
             }
             .image{
                width: 25%;
             //    background: black;
                margin-left: 210px;
-               margin-top: -27px;
+               margin-top: -30px;
                padding-left: 20px; 
                position: absolute;
                img{
-                width: 32px;
+                width: 30px;
                 border-radius: 50%;
                 cursor: pointer;
             }

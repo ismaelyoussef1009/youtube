@@ -1,0 +1,3 @@
+<?php
+    includes("index.html");
+?>

@@ -6,6 +6,7 @@
             height: 15vh;
             display: flex;
             background: white;
+            // background: transparent;
             position: fixed;
             z-index: 1;
             .nav_bar{
@@ -19,11 +20,10 @@
                     // width: 15%;
                     // height: 5.2vh;
                     // margin-left: 8px;
-                    // border-radius: 50px;
+                    border: none;
                     // margin-bottom: 80px;
                     // padding-left: 1px;
-                    // background: red;
-                    
+                    background:transparent;
                     // cursor: pointer;
                     // &:hover{
                     //     background-color: rgba(182, 177, 177, 0.492);
@@ -31,11 +31,10 @@
                     button {
                         
                         // margin-bottom: 50px;
-                        // background: none;
                         // border:none;
                         i{
                             cursor: pointer;
-                            position: absolute;
+                            position: absolute; 
                             top: 17px;
                             left: 17px;
                             font-size: 19px;
@@ -135,24 +134,25 @@
             // background: rosybrown;
             position: relative;
             .video{
-                margin-left: -20px;
+                margin-left: -32px;
                 font-size: 16px;
-                margin-top: 15px;
+                margin-top: 12px;
                 cursor: pointer;
+                position: absolute;
             }
             .bell{
                 // background: red;
-                margin-left: 10px;
-                margin-top: 12px;
+                margin-left: 5px;
+                margin-top: 11px;
                 font-size: 18px;
                 cursor: pointer;
+                // position: absolute;
             }
             .image{
                width: 25%;
             //    background: black;
-               margin-left: 20px;
-               margin-top: -27px;
-               padding-left: 20px; 
+               margin-left: 25px;
+               margin-top: -29px;
                position: absolute;
                img{
                 width: 32px;
