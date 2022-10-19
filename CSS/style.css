@@ -221,6 +221,53 @@ section .library .library_list ul li:hover {
 }
 section .library .library_list ul li a {
   cursor: pointer;
+  overflow-y: scroll;
+}
+section .library:hover ::-webkit-scrollbar {
+  width: 6px;
+}
+section .library:hover ::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+section .library .library_list {
+  display: block;
+}
+section .library .library_list p {
+  font-size: 13px;
+  text-align: left;
+  padding: 2px 0 10px 10px;
+}
+section .library .library_list h6 {
+  font-size: 10px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-top: -30px;
+  color: rgb(117, 115, 115);
+}
+section .library .library_list ul {
+  list-style: none;
+}
+section .library .library_list ul h3 {
+  font-size: 13px;
+  margin: 15px 0 11px 10px;
+}
+section .library .library_list ul .man {
+  background-color: rgba(126, 122, 122, 0.121);
+}
+section .library .library_list ul .man:hover {
+  background-color: rgba(182, 177, 177, 0.492);
+}
+section .library .library_list ul li {
+  width: 95%;
+  height: 5.9vh;
+  padding: 6px 0px 6px 10px;
+  border-radius: 10px;
+}
+section .library .library_list ul li:hover {
+  background-color: rgba(126, 122, 122, 0.121);
+}
+section .library .library_list ul li a {
   text-decoration: none;
   color: black;
   font-size: 12px;
@@ -383,7 +430,7 @@ section .videos .video-container .video:hover .dots_download {
   display: block;
 }
 section .videos .video-container .video .videos-image {
-  height: 170px;
+  height: 160px;
 }
 section .videos .video-container .video .videos-image img {
   width: 100%;
@@ -392,7 +439,7 @@ section .videos .video-container .video .videos-image img {
 }
 section .videos .video-container .video .time {
   position: absolute;
-  top: 149.5px;
+  top: 140px;
   left: 85%;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
@@ -403,8 +450,8 @@ section .videos .video-container .video .video-detail {
   position: inherit;
 }
 section .videos .video-container .video .video-detail .author img {
-  height: 40px;
-  width: 40px;
+  height: 37px;
+  width: 37px;
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 10px;
@@ -491,7 +538,7 @@ section .videos .storie-container .storie .storie-title {
   margin-top: 12px;
 }
 section .videos .storie-container .storie .storie-title .description {
-  width: 88%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -519,114 +566,50 @@ section .videos .storie-container .storie .storie-title button {
   cursor: pointer;
   position: absolute;
   margin-top: 10px;
-  margin-left: 14%;
+  margin-left: 12%;
 }
 section .videos .ligne-storie {
   margin-top: 30px;
 }
 
-.black {
-  display: none;
-}
-
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   section {
     display: flex;
   }
   section .library {
-    width: 17%;
-    flex-grow: 1;
-    height: 100vh;
-    position: fixed;
-    top: 8vh;
-    left: 0;
-    margin-top: 8px;
-    padding-left: 6px;
-  }
-  section .library:hover {
+    display: none;
     overflow-y: scroll;
-  }
-  section .library:hover ::-webkit-scrollbar {
-    width: 6px;
-  }
-  section .library:hover ::-webkit-scrollbar-thumb {
-    background: gray;
-    border-radius: 10px;
-  }
-  section .library .library_list {
-    display: block;
-  }
-  section .library .library_list p {
-    font-size: 13px;
-    text-align: left;
-    padding: 2px 0 10px 10px;
-  }
-  section .library .library_list h6 {
-    font-size: 10px;
-    padding-bottom: 80px;
-    padding-left: 10px;
-    padding-top: -30px;
-    color: rgb(117, 115, 115);
+    background: blueviolet;
   }
   section .library .library_list ul {
     list-style: none;
   }
-  section .library .library_list ul h3 {
-    font-size: 13px;
-    margin: 15px 0 11px 10px;
-  }
-  section .library .library_list ul .man {
-    background-color: rgba(126, 122, 122, 0.121);
-  }
-  section .library .library_list ul .man:hover {
-    background-color: rgba(182, 177, 177, 0.492);
-  }
   section .library .library_list ul li {
-    width: 95%;
-    height: 5.9vh;
-    padding: 6px 0px 6px 10px;
-    border-radius: 10px;
+    width: 100%;
+    padding: 6px 0px 6px 20px;
   }
   section .library .library_list ul li:hover {
     background-color: rgba(126, 122, 122, 0.121);
   }
   section .library .library_list ul li a {
-    cursor: pointer;
     text-decoration: none;
     color: black;
     font-size: 12px;
   }
-  section .library .library_list ul li a i {
-    font-size: 15px;
-  }
   section .library .library_list ul li a span {
-    margin-left: 22px;
-    text-align: center;
-  }
-  section .library .library_list ul li a #sumaya {
-    color: red;
-  }
-  section .library hr {
-    width: 86%;
-    margin: 12px 0 12px 0;
-    border: 0.5px solid rgba(211, 211, 211, 0.363);
+    margin-left: 25px;
   }
   section .explore {
-    width: 8%;
-    height: 100vh;
-    position: fixed;
+    width: 7%;
     display: none;
-    padding-top: 55px;
   }
   section .explore .section1_list {
     list-style: none;
   }
   section .explore .section1_list li {
-    width: 60%;
-    border-radius: 10px;
+    width: 100%;
     text-decoration: none;
-    top: 20px;
-    padding: 8px 0px 15px 20px;
+    padding: 6px 0px 6px 20px;
   }
   section .explore .section1_list li:hover {
     background-color: rgba(102, 95, 95, 0.268);
@@ -634,18 +617,7 @@ section .videos .ligne-storie {
   section .explore .section1_list li a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
-  }
-  section .explore .section1_list li a i {
-    padding-top: 10px;
-  }
-  section .explore .section1_list li a span {
-    font-size: 9px;
-    margin-left: -5px;
-    text-align: center;
-  }
-  section .explore .section1_list li a .dia {
-    margin-left: -15px;
+    font-size: 12px;
   }
   section .scroll-container {
     display: flex;
@@ -660,9 +632,9 @@ section .videos .ligne-storie {
     background: red;
   }
   section .scroll-container .left-button-container {
-    background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-color: red;
     padding-right: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     position: absolute;
     left: 0;
   }
@@ -670,9 +642,9 @@ section .videos .ligne-storie {
     margin-top: 8px;
   }
   section .scroll-container .right-button-container {
-    background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-color: blue;
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     position: absolute;
     right: 0;
   }
@@ -685,70 +657,37 @@ section .videos .ligne-storie {
     cursor: pointer;
   }
   section .videos {
-    width: 83%;
-    flex-grow: 1;
-    flex-basis: 60%;
-    position: absolute;
-    top: calc(8vh + 65px);
-    left: 17%;
-  }
-  section .videos .filters::-webkit-scrollbar {
-    display: none;
+    width: 70%;
   }
   section .videos .filters {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    height: 65px;
+    width: 100%;
+    height: 50px;
     display: flex;
     background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
     align-items: center;
-    white-space: nowrap;
-    padding-bottom: 1px;
-  }
-  section .videos .filters .ismael {
-    border-radius: 50px;
-    border: 1px solid #dbdbdb;
-    text-transform: capitalize;
-    color: white;
-    background: black;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 0 0 0 15px;
-    padding: 8px;
-    border-radius: 10px;
+    position: absolute;
+    top: 3vh;
+    left: -50px;
   }
   section .videos .filters .filter-options {
     border-radius: 50px;
     border: 1px solid #dbdbdb;
     text-transform: capitalize;
     color: #242424;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
-    margin: 0 0 0 15px;
-    font-family: "roboto", Arial, sans-serif;
-    padding: 8px;
-    border-radius: 10px;
-    background: rgba(126, 122, 122, 0.121);
-  }
-  section .videos .filters .filter-options:hover {
-    background-color: rgba(182, 177, 177, 0.492);
   }
   section .videos .video-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    width: 100%;
-    padding: 12px;
-    z-index: -1;
+    grid-template-columns: auto auto auto;
   }
   section .videos .video-container .video {
-    width: 94%;
-    height: 90%;
-    margin-right: 2%;
-    margin-bottom: 40px;
-    -moz-column-gap: 3%;
-         column-gap: 3%;
+    width: 95%;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     position: relative;
-    cursor: pointer;
   }
   section .videos .video-container .video:hover .dots_download {
     display: block;
@@ -764,7 +703,8 @@ section .videos .ligne-storie {
   section .videos .video-container .video .time {
     position: absolute;
     top: 149.5px;
-    left: 85%;
+    left: 80%;
+    margin-top: -5px;
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
   }
@@ -783,14 +723,13 @@ section .videos .ligne-storie {
   section .videos .video-container .video .video-detail .title {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
-    width: 95%;
+    width: 93%;
   }
   section .videos .video-container .video .video-detail .title h3 {
     font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: black;
+    color: #030303;
   }
   section .videos .video-container .video .video-detail .title a {
     text-decoration: none;
@@ -812,36 +751,15 @@ section .videos .ligne-storie {
     margin-top: 10px;
     display: none;
   }
-  section .videos hr {
-    border: none;
-    border-bottom: 5px solid #ddd;
-    margin-bottom: 50px;
-  }
-  section .videos .shorts {
-    display: flex;
-    -moz-column-gap: 8px;
-         column-gap: 8px;
-    margin-left: 15px;
-    margin-bottom: 30px;
-    margin-top: -20px;
-  }
-  section .videos .shorts i {
-    font-size: 25px;
-    color: red;
-  }
-  section .videos .shorts h1 {
-    font-family: "roboto", arial, sans-serif;
-    font-weight: 300;
-  }
   section .videos .storie-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     width: 100%;
     -moz-column-gap: 1%;
          column-gap: 1%;
   }
   section .videos .storie-container .storie {
-    width: 98%;
+    width: 97%;
     height: 90%;
     margin-bottom: 10px;
     cursor: pointer;
@@ -862,7 +780,7 @@ section .videos .ligne-storie {
     margin-top: 12px;
   }
   section .videos .storie-container .storie .storie-title .description {
-    width: 88%;
+    width: 85%;
     display: flex;
     flex-direction: column;
   }
@@ -882,6 +800,9 @@ section .videos .ligne-storie {
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
+  section .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
   section .videos .storie-container .storie .storie-title button {
     display: none;
     border: none;
@@ -890,13 +811,255 @@ section .videos .ligne-storie {
     cursor: pointer;
     position: absolute;
     margin-top: 10px;
-    margin-left: 14%;
+    margin-left: 20%;
   }
   section .videos .ligne-storie {
     margin-top: 30px;
   }
-  .black {
+}
+@media (max-width: 768px) {
+  section {
+    display: flex;
+  }
+  section .library {
     display: none;
+    overflow-y: scroll;
+    background: blueviolet;
+  }
+  section .library .library_list ul {
+    list-style: none;
+  }
+  section .library .library_list ul li {
+    width: 100%;
+    padding: 6px 0px 6px 20px;
+  }
+  section .library .library_list ul li:hover {
+    background-color: rgba(126, 122, 122, 0.121);
+  }
+  section .library .library_list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .library .library_list ul li a span {
+    margin-left: 25px;
+  }
+  section .explore {
+    width: 7%;
+    display: none;
+  }
+  section .explore .section1_list {
+    list-style: none;
+  }
+  section .explore .section1_list li {
+    width: 100%;
+    text-decoration: none;
+    padding: 6px 0px 6px 20px;
+  }
+  section .explore .section1_list li:hover {
+    background-color: rgba(102, 95, 95, 0.268);
+  }
+  section .explore .section1_list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  section .scroll-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 8vh;
+    width: 83%;
+    left: 17%;
+    z-index: 1;
+    background: red;
+  }
+  section .scroll-container .left-button-container {
+    background-color: red;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 0;
+  }
+  section .scroll-container .left-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container .right-button-container {
+    background-color: blue;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0;
+  }
+  section .scroll-container .right-button-container button {
+    margin-top: 8px;
+  }
+  section .scroll-container button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  section .videos {
+    width: 70%;
+  }
+  section .videos .filters {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+    left: -50px;
+  }
+  section .videos .filters .filter-options {
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  section .videos .video-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  section .videos .video-container .video {
+    width: 95%;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    position: relative;
+  }
+  section .videos .video-container .video:hover .dots_download {
+    display: block;
+  }
+  section .videos .video-container .video .videos-image {
+    height: 170px;
+  }
+  section .videos .video-container .video .videos-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  section .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 80%;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+  }
+  section .videos .video-container .video .video-detail {
+    display: flex;
+    margin-top: 6px;
+    position: inherit;
+  }
+  section .videos .video-container .video .video-detail .author img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  section .videos .video-container .video .video-detail .title {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+  section .videos .video-container .video .video-detail .title h3 {
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #030303;
+  }
+  section .videos .video-container .video .video-detail .title a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail .title span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+  section .videos .video-container .video .video-detail button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+    display: none;
+  }
+  section .videos .storie-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  section .videos .storie-container .storie {
+    width: 97%;
+    height: 90%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  section .videos .storie-container .storie:hover .dots_download {
+    display: block;
+  }
+  section .videos .storie-container .storie .storie-image {
+    height: 300px;
+  }
+  section .videos .storie-container .storie .storie-image img {
+    width: 100%;
+    height: 100%;
+  }
+  section .videos .storie-container .storie .storie-title {
+    display: flex;
+    position: inherit;
+    margin-top: 12px;
+  }
+  section .videos .storie-container .storie .storie-title .description {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .videos .storie-container .storie .storie-title .description h3 {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+  }
+  section .videos .storie-container .storie .storie-title .description a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description span {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+  section .videos .storie-container .storie .storie-title .description .span {
+    margin-top: -10px;
+  }
+  section .videos .storie-container .storie .storie-title button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30%;
+  }
+  section .videos .ligne-storie {
+    margin-top: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -1156,22 +1319,27 @@ section .videos .ligne-storie {
     grid-template-columns: auto;
   }
   section .videos .video-container .video {
-    width: 95%;
-    margin-right: 2%;
-    -moz-column-gap: 3%;
-         column-gap: 3%;
+    width: 100%;
     position: relative;
   }
   section .videos .video-container .video:hover .dots_download {
     display: block;
   }
   section .videos .video-container .video .videos-image {
-    height: 53%;
+    height: 170px;
   }
   section .videos .video-container .video .videos-image img {
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
+  section .videos .video-container .video .time {
+    position: absolute;
+    top: 149.5px;
+    left: 85%;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
   }
   section .videos .video-container .video .video-detail {
     display: flex;
@@ -1188,17 +1356,13 @@ section .videos .ligne-storie {
   section .videos .video-container .video .video-detail .title {
     display: flex;
     flex-direction: column;
-    margin-top: -4px;
-    width: 95%;
+    width: 93%;
   }
   section .videos .video-container .video .video-detail .title h3 {
     font-family: "roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #030303;
-  }
-  section .videos .video-container .video .video-detail .title .name {
-    margin-top: -8px;
   }
   section .videos .video-container .video .video-detail .title a {
     text-decoration: none;
@@ -1229,7 +1393,7 @@ section .videos .ligne-storie {
     overflow: hidden;
   }
   section .videos .storie-container .storie {
-    width: 98%;
+    width: 97%;
     height: 90%;
     margin-bottom: 10px;
     cursor: pointer;
@@ -1270,9 +1434,6 @@ section .videos .ligne-storie {
     font-size: 14px;
     color: rgb(96, 96, 96);
   }
-  section .videos .storie-container .storie .storie-title .description .span {
-    margin-top: -10px;
-  }
   section .videos .storie-container .storie .storie-title button {
     display: none;
     border: none;
@@ -1281,7 +1442,7 @@ section .videos .ligne-storie {
     cursor: pointer;
     position: absolute;
     margin-top: 10px;
-    margin-left: 14%;
+    margin-left: 45%;
   }
   section .videos .ligne-storie {
     margin-top: 30px;

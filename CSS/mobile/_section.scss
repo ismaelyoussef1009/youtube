@@ -142,9 +142,9 @@ section{
             grid-template-columns: auto;
             // width: 25%;
             .video{
-                width: 95%;
-                margin-right: 2%;
-                column-gap: 3%;
+                width: 100%;
+                // margin-right: 2%;
+                // column-gap: 3%;
                 position: relative;
                 &:hover{
                     .dots_download{
@@ -152,12 +152,20 @@ section{
                     }
                 }
                 .videos-image{
-                    height: 53%;
+                    height: 170px;
                     img{
                         width: 100%;
                         height: 100%;
                         cursor: pointer;
                     }
+                }
+                .time{
+                    position: absolute;
+                    top: 149.5px;
+                    left: 85%;
+                    margin-top: -5px;
+                    background-color: rgba(0,0,0,.85);
+                    color: white;
                 }
                 .video-detail{
                     display: flex;
@@ -175,8 +183,8 @@ section{
                     .title{
                         display: flex;
                         flex-direction: column;
-                        margin-top: -4px;
-                        width: 95%;
+                        // margin-top: -4px;
+                        width: 93%;
     
                         h3{
                             font-family: 'roboto', Arial, sans-serif;
@@ -184,9 +192,7 @@ section{
                             line-height: 18px;
                             color: #030303;
                         }
-                        .name{
-                            margin-top: -8px;
-                        }
+                       
                         a{
                             text-decoration: none;
                             color: rgb(96, 96, 96);
@@ -222,7 +228,7 @@ section{
             overflow: hidden;
                 
             .storie{
-                width: 98%;
+                width: 97%;
                 height: 90%;
                 margin-bottom: 10px;
                 cursor: pointer;
@@ -269,9 +275,9 @@ section{
                             font-size: 14px;
                             color: rgb(96, 96, 96);
                         }
-                        .span{
-                            margin-top: -10px;
-                        }
+                        // .span{
+                        //     margin-top: -10px;
+                        // }
                     }
 
                     button{
@@ -282,7 +288,7 @@ section{
                         cursor: pointer;
                         position: absolute;
                         margin-top: 10px;
-                        margin-left: 14%;
+                        margin-left: 45%;
                     }
                 }
             }
