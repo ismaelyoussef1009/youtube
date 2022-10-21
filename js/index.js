@@ -2,22 +2,13 @@
 // first we  need to collect all elements we want. These elements are like the people we want to work wit.
 
 var mainBody = document.querySelector('.main_body'); // here i have collected the body tag/element
-var blackDiv = document.querySelector('.black');
-var mobileHamburger = document.querySelector('.mobile_hamburger');
 var hamburgerBtn = document.getElementById('tooglebar');
 var library = document.getElementById('defaultDisplay');
 var explore = document.getElementById('secondDisplay');
 var videos = document.getElementById("videos_container");//ismael
 var filter = document.getElementById("scroll_containers");//ismael
-blackDiv.addEventListener('click', function(){
-    blackDiv.classList.toggle("active");
-    
-});
-mobileHamburger.addEventListener('click', function(){
-    mobileHamburger.classList.toggle("active");
-    mainBody.classList.toggle("active");
-    blackDiv.classList.toggle("active");
-});
+
+
 hamburgerBtn.addEventListener('click',function(){
     hamburgerBtn.classList.toggle("active");
     mainBody.classList.toggle("active");
@@ -63,6 +54,7 @@ console.log(filters_scroll.scrollLeft);
 if(filters_scroll.scrollLeft == 0){
     console.log('true');
     left_button_container.style.display = 'none';
+    
 }
 
 

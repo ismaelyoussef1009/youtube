@@ -14,7 +14,7 @@ section{
         // width: 22%;
         // background: blueviolet;
         .library_list{
-            // display: block;
+            display: none;
             ul{
                 list-style: none;
                 li{
@@ -45,6 +45,7 @@ section{
         visibility: hidden;
         .section1_list{
             list-style: none;
+            display: none;
                 li{
                     width: 100%;
                     text-decoration: none;
@@ -66,21 +67,20 @@ section{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        position: fixed;
-        top: 8vh;
-        width: 83%;
-        left: 17%;
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        left: 0;
         z-index: 1;
-        background: red;
+
         .left-button-container {
-            background-color: red;
             // background: linear-gradient(to right, rgb(191, 16, 16) 50%,rgba(255,255,255,0) 100%);
             padding-right: 50px;
             padding-bottom: 20px;
             position: absolute;
             left: 0;
             button{
-                margin-top: 8px;
+                margin-top: 15px;
             }
         }
     
@@ -92,7 +92,7 @@ section{
             position: absolute;
             right: 0;
             button{
-                margin-top: 8px;
+                margin-top: 15px;
             }
             
         }    
@@ -106,7 +106,7 @@ section{
     }
 
     .videos{
-        width: 70%;
+        width: 75%;
         // background: blue;
         
         .filters{
@@ -117,9 +117,9 @@ section{
             border-top: 1px solid #dbdbdb;
             border-bottom: 1px solid #dbdbdb;
             align-items: center;
-            position: absolute;
-            top: 3vh;
-            left: -50px;
+            // position: abs;
+            // top: 3vh;
+            // left: -50px;
             .filter-options{
                 border-radius: 50px;
                 border: 1px solid #dbdbdb; 
@@ -371,6 +371,7 @@ section{
             }
             ul{
                 h3{
+                    width: 90%;
                     font-size: 13px;
                     margin: 15px 0 12px 23px;
                 }
