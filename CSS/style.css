@@ -31,6 +31,9 @@ header .navigation .nav_bar .nav_bar_button {
   padding-left: 1px;
   cursor: pointer;
 }
+header .navigation .nav_bar .nav_bar_button:hover {
+  background-color: rgba(182, 177, 177, 0.492);
+}
 header .navigation .nav_bar .nav_bar_button button {
   font-size: 15px;
   padding: 9px;
@@ -94,9 +97,6 @@ header .search_bar .search_bar_input .search_btn {
   border-left: none;
   cursor: pointer;
 }
-header .search_bar .search_bar_input .search_btn:hover {
-  background-color: rgba(182, 177, 177, 0.492);
-}
 header .search_bar .search_bar_input .search_btn i {
   font-size: 22px;
   border: none;
@@ -130,9 +130,6 @@ header .notification_bar .video {
   margin-top: 5px;
   cursor: pointer;
 }
-header .notification_bar .video:hover {
-  background-color: rgba(182, 177, 177, 0.492);
-}
 header .notification_bar .bell {
   width: 10%;
   height: 5vh;
@@ -142,9 +139,6 @@ header .notification_bar .bell {
   margin-top: 8px;
   font-size: 16px;
   cursor: pointer;
-}
-header .notification_bar .bell:hover {
-  background-color: rgba(182, 177, 177, 0.492);
 }
 header .notification_bar .image {
   width: 25%;
@@ -286,7 +280,6 @@ section .scroll-container {
   width: 83%;
   left: 17%;
   z-index: 1;
-  background: red;
 }
 section .scroll-container .left-button-container {
   background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
@@ -919,6 +912,8 @@ section .videos .ligne-storie {
     height: 10vh;
     display: flex;
     top: 0px;
+    background: transparent;
+    border: none;
     position: relative;
   }
   header .navigation .nav_bar .nav_bar_button {
@@ -1074,7 +1069,6 @@ section .videos .ligne-storie {
     margin-left: 25px;
   }
   section .explore {
-    width: 7%;
     display: none;
     visibility: hidden;
   }
@@ -1102,7 +1096,7 @@ section .videos .ligne-storie {
     align-items: center;
     position: absolute;
     top: -50px;
-    width: 100%;
+    width: 75%;
     left: 0;
     z-index: 1;
   }

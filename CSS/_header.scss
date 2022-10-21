@@ -23,9 +23,9 @@ header{
                     margin-top: 6px;
                     padding-left: 1px;
                     cursor: pointer;
-                    // &:hover{
-                    //     background-color: rgba(182, 177, 177, 0.492);
-                    // }
+                    &:hover{
+                        background-color: rgba(182, 177, 177, 0.492);
+                    }
                     button {
                         font-size: 15px;
                         padding: 9px;
@@ -85,9 +85,9 @@ header{
                     // background: rgb(39, 18, 203);
                     border-left: none;
                     cursor: pointer;
-                    &:hover{
-                        background-color: rgba(182, 177, 177, 0.492);
-                    }
+                    // &:hover{
+                    //     background-color: rgba(182, 177, 177, 0.492);
+                    // }
                     i{
                         font-size: 22px;
                         border: none;
@@ -124,9 +124,9 @@ header{
                 font-size: 15px;
                 margin-top: 5px;
                 cursor: pointer;
-                &:hover{
-                    background-color: rgba(182, 177, 177, 0.492);
-                }
+                // &:hover{
+                //     background-color: rgba(182, 177, 177, 0.492);
+                // }
             }
             .bell{
                 width: 10%;
@@ -137,9 +137,9 @@ header{
                 margin-top: 8px;
                 font-size: 16px;
                 cursor: pointer;
-                &:hover{
-                    background-color: rgba(182, 177, 177, 0.492);
-                }
+                // &:hover{
+                //     background-color: rgba(182, 177, 177, 0.492);
+                // }
 
             }
             .image{
